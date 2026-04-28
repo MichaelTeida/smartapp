@@ -1,0 +1,279 @@
+{
+    "category": "Matematyka",
+    "levels": {
+        "Podstawowy": [
+            {
+                "id": "mat-p-001",
+                "question": "Ile wynosi 2³ (dwa do potęgi trzeciej)?",
+                "options": [
+                    {
+                        "text": "6",
+                        "isCorrect": false,
+                        "wrongExplanation": "6 to wynik mnożenia 2×3 – potęgowanie oznacza mnożenie podstawy przez siebie, nie przez wykładnik."
+                    },
+                    {
+                        "text": "8",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "9",
+                        "isCorrect": false,
+                        "wrongExplanation": "9 to 3² (trzy do kwadratu) – 2³ oznacza 2×2×2."
+                    },
+                    {
+                        "text": "16",
+                        "isCorrect": false,
+                        "wrongExplanation": "16 to 2⁴ – 2³ to 2×2×2 = 8."
+                    }
+                ],
+                "correctExplanation": "2³ oznacza 2 × 2 × 2 = 8. Potęgowanie to wielokrotne mnożenie podstawy (2) przez siebie tyle razy, ile wskazuje wykładnik (3). Nie myl z mnożeniem 2 × 3 = 6 – to zupełnie inna operacja."
+            },
+            {
+                "id": "mat-p-002",
+                "question": "Co to jest liczba pierwsza?",
+                "options": [
+                    {
+                        "text": "Liczba podzielna tylko przez 1 i siebie samą",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Pierwsza liczba w ciągu Fibonacciego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Ciąg Fibonacciego zaczyna się od 0, 1, 1, 2... – liczby pierwsze to pojęcie z teorii liczb."
+                    },
+                    {
+                        "text": "Liczba mniejsza od zera",
+                        "isCorrect": false,
+                        "wrongExplanation": "Liczby mniejsze od zera to liczby ujemne – liczba pierwsza jest zawsze większa od 1."
+                    },
+                    {
+                        "text": "Dowolna liczba nieparzysta",
+                        "isCorrect": false,
+                        "wrongExplanation": "Nie wszystkie nieparzyste są pierwsze (np. 9=3×3) i liczba 2 jest pierwsza, choć parzysta."
+                    }
+                ],
+                "correctExplanation": "Liczba pierwsza to liczba naturalna większa od 1, która jest podzielna tylko przez 1 i przez siebie samą. Przykłady: 2, 3, 5, 7, 11, 13. Liczba 2 jest jedyną parzystą liczbą pierwszą. Liczby pierwsze są fundamentem kryptografii – bezpieczeństwo szyfrowania RSA opiera się na trudności faktoryzacji dużych liczb."
+            },
+            {
+                "id": "mat-p-003",
+                "question": "Jaki jest wzór na pole koła?",
+                "options": [
+                    {
+                        "text": "πr²",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "2πr",
+                        "isCorrect": false,
+                        "wrongExplanation": "2πr to wzór na obwód koła – pole wymaga podniesienia promienia do kwadratu."
+                    },
+                    {
+                        "text": "πd",
+                        "isCorrect": false,
+                        "wrongExplanation": "πd ≈ obwód koła (bo d = 2r) – pole to π pomnożone przez kwadrat promienia."
+                    },
+                    {
+                        "text": "r² / π",
+                        "isCorrect": false,
+                        "wrongExplanation": "Dzielenie przez π nie ma sensu geometrycznego – poprawnie to π razy r²."
+                    }
+                ],
+                "correctExplanation": "Pole koła obliczamy wzorem S = πr², gdzie r to promień koła, a π (pi) ≈ 3.14159. Wzór mówi, że pole rośnie z kwadratem promienia – koło o promieniu 2 razy większym ma 4 razy większe pole. Jest to jeden z najważniejszych wzorów w geometrii."
+            },
+            {
+                "id": "mat-p-004",
+                "question": "Co to jest procent?",
+                "options": [
+                    {
+                        "text": "Jedna setna część całości",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Jedna tysięczna część całości",
+                        "isCorrect": false,
+                        "wrongExplanation": "Jedna tysięczna to promil (‰) – procent to jedna setna."
+                    },
+                    {
+                        "text": "Jedna dziesiąta część całości",
+                        "isCorrect": false,
+                        "wrongExplanation": "Jedna dziesiąta to 10% – jeden procent to 1/100 całości."
+                    },
+                    {
+                        "text": "Połowa danej liczby",
+                        "isCorrect": false,
+                        "wrongExplanation": "Połowa to 50% – procent to ogólna jednostka oznaczająca setną część."
+                    }
+                ],
+                "correctExplanation": "Procent (%) to jedna setna część całości. 1% = 1/100 = 0.01. Jeśli masz 200 jabłek i weźmiesz 25%, to zabierasz 50 jabłek (200 × 0.25). Procenty ułatwiają porównywanie proporcji niezależnie od wielkości – np. 50% z 10 (=5) i 50% z 1000 (=500) to ta sama proporcja."
+            },
+            {
+                "id": "mat-p-005",
+                "question": "Co to jest równanie kwadratowe?",
+                "options": [
+                    {
+                        "text": "Równanie, w którym najwyższa potęga zmiennej wynosi 2",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Równanie z czterema niewiadomymi",
+                        "isCorrect": false,
+                        "wrongExplanation": "Liczba niewiadomych nie definiuje równania kwadratowego – chodzi o najwyższą potęgę."
+                    },
+                    {
+                        "text": "Równanie opisujące kwadrat",
+                        "isCorrect": false,
+                        "wrongExplanation": "Choć nazwa nawiązuje do kwadratu, równanie kwadratowe to pojęcie algebraiczne, nie geometryczne."
+                    },
+                    {
+                        "text": "Równanie, które zawsze ma dwa rozwiązania",
+                        "isCorrect": false,
+                        "wrongExplanation": "Równanie kwadratowe może mieć 0, 1 lub 2 rozwiązań – zależy od wyróżnika (delty)."
+                    }
+                ],
+                "correctExplanation": "Równanie kwadratowe ma postać ax² + bx + c = 0, gdzie a ≠ 0. Najwyższa potęga zmiennej x wynosi 2. Rozwiązuje się je wzorem z deltą: Δ = b² - 4ac. Jeśli Δ > 0, są dwa rozwiązania; jeśli Δ = 0, jedno; jeśli Δ < 0, brak rozwiązań rzeczywistych."
+            }
+        ],
+        "Zaawansowany": [
+            {
+                "id": "mat-z-001",
+                "question": "Co to jest pochodna funkcji?",
+                "options": [
+                    {
+                        "text": "Miara szybkości zmian funkcji w danym punkcie",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Wartość funkcji w punkcie zerowym",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wartość w punkcie zerowym to f(0) – pochodna to tempo zmian."
+                    },
+                    {
+                        "text": "Suma wszystkich wartości funkcji",
+                        "isCorrect": false,
+                        "wrongExplanation": "Suma wartości to pojęcie bliższe całce – pochodna to chwilowe tempo zmian."
+                    },
+                    {
+                        "text": "Odwrotność funkcji",
+                        "isCorrect": false,
+                        "wrongExplanation": "Odwrotność to funkcja odwrotna f⁻¹ – pochodna to gradient."
+                    }
+                ],
+                "correctExplanation": "Pochodna funkcji f'(x) opisuje, jak szybko zmienia się wartość funkcji w danym punkcie. Geometrycznie to nachylenie stycznej do wykresu. Na przykład, jeśli f(x) opisuje pozycję, to f'(x) to prędkość. Pochodna jest fundamentem analizy matematycznej i ma zastosowania w fizyce, ekonomii i uczeniu maszynowym."
+            },
+            {
+                "id": "mat-z-002",
+                "question": "Co to jest macierz?",
+                "options": [
+                    {
+                        "text": "Prostokątna tablica liczb z określonymi operacjami algebraicznymi",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Wykres funkcji dwóch zmiennych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wykresy funkcji to reprezentacje graficzne – macierz to struktura algebraiczna."
+                    },
+                    {
+                        "text": "Typ równania różniczkowego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Równania różniczkowe to osobna dziedzina – macierz to tablica liczb."
+                    },
+                    {
+                        "text": "Jednostka miary w fizyce kwantowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Macierze są UŻYWANE w fizyce kwantowej, ale nie są jednostką miary."
+                    }
+                ],
+                "correctExplanation": "Macierz to prostokątna tablica liczb ułożonych w wierszach i kolumnach, z zdefiniowanymi operacjami jak dodawanie, mnożenie i odwracanie. Macierze są wszędzie: w grafice komputerowej (transformacje 3D), uczeniu maszynowym (sieci neuronowe), fizyce i ekonomii. Macierz 3×3 może np. opisać obrót obiektu w przestrzeni 3D."
+            },
+            {
+                "id": "mat-z-003",
+                "question": "Co to jest twierdzenie Bayesa?",
+                "options": [
+                    {
+                        "text": "Wzór na obliczanie prawdopodobieństwa warunkowego na podstawie wcześniejszej wiedzy",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Twierdzenie o sumie kątów w trójkącie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Suma kątów = 180° to twierdzenie geometryczne – Bayes dotyczy prawdopodobieństwa."
+                    },
+                    {
+                        "text": "Wzór na pole powierzchni kuli",
+                        "isCorrect": false,
+                        "wrongExplanation": "Pole kuli = 4πr² – twierdzenie Bayesa łączy prawdopodobieństwa warunkowe."
+                    },
+                    {
+                        "text": "Zasada zachowania energii",
+                        "isCorrect": false,
+                        "wrongExplanation": "Zachowanie energii to zasada fizyczna – Bayes to narzędzie statystyki."
+                    }
+                ],
+                "correctExplanation": "Twierdzenie Bayesa pozwala aktualizować prawdopodobieństwo hipotezy na podstawie nowych dowodów. Wzór: P(A|B) = P(B|A) × P(A) / P(B). Jest fundamentem statystyki bayesowskiej, używanej w filtrowaniu spamu, diagnostyce medycznej, uczeniu maszynowym i wszędzie tam, gdzie trzeba wnioskować w warunkach niepewności."
+            },
+            {
+                "id": "mat-z-004",
+                "question": "Co to jest całka oznaczona?",
+                "options": [
+                    {
+                        "text": "Narzędzie obliczające pole pod wykresem funkcji w danym przedziale",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Odwrotność mnożenia macierzy",
+                        "isCorrect": false,
+                        "wrongExplanation": "Odwrotność mnożenia macierzy to macierz odwrotna – całka to operacja analizy."
+                    },
+                    {
+                        "text": "Suma nieskończonego ciągu liczb",
+                        "isCorrect": false,
+                        "wrongExplanation": "Suma nieskończonego ciągu to szereg – całka jest operacją ciągłą, nie dyskretną."
+                    },
+                    {
+                        "text": "Najwyższa wartość funkcji w przedziale",
+                        "isCorrect": false,
+                        "wrongExplanation": "Najwyższa wartość to maksimum – całka sumuje \"pola\" pod wykresem."
+                    }
+                ],
+                "correctExplanation": "Całka oznaczona ∫[a,b] f(x)dx oblicza pole obszaru między wykresem funkcji f(x) a osią X na przedziale [a,b]. Jest to fundamentalne narzędzie analizy matematycznej – odwrotność różniczkowania. Całki mają zastosowania w fizyce (praca, energia), statystyce (rozkłady), inżynierii i ekonomii."
+            },
+            {
+                "id": "mat-z-005",
+                "question": "Co to jest transformata Fouriera?",
+                "options": [
+                    {
+                        "text": "Rozkład sygnału na składowe sinusoidalne o różnych częstotliwościach",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Metoda rozwiązywania równań kwadratowych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Równania kwadratowe rozwiązuje delta – Fourier analizuje sygnały."
+                    },
+                    {
+                        "text": "Algorytm sortowania danych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Algorytmy sortowania to QuickSort, MergeSort – Fourier rozkłada sygnały."
+                    },
+                    {
+                        "text": "Twierdzenie o zbieżności ciągów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Zbieżność ciągów to analiza – Fourier to narzędzie przetwarzania sygnałów."
+                    }
+                ],
+                "correctExplanation": "Transformata Fouriera rozkłada dowolny sygnał (dźwięk, obraz, falę) na sumę fal sinusoidalnych o różnych częstotliwościach i amplitudach. Pozwala \"zobaczyć\" z jakich częstotliwości składa się sygnał. Jest podstawą kompresji MP3, rozpoznawania mowy, przetwarzania obrazów medycznych i wielu dziedzin inżynierii."
+            }
+        ]
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "category": "Test od rekrutera IT",
+    "levels": {
+        "Podstawowy": [
+            {
+                "id": "rekr-p-001",
+                "question": "Co to jest Git?",
+                "options": [
+                    {
+                        "text": "Rozproszony system kontroli wersji",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Edytor kodu źródłowego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Edytory kodu to VS Code, Vim – Git śledzi zmiany w plikach."
+                    },
+                    {
+                        "text": "Język programowania backendowego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Języki backendowe to Python, Java – Git to narzędzie wersjonowania."
+                    },
+                    {
+                        "text": "Baza danych relacyjna",
+                        "isCorrect": false,
+                        "wrongExplanation": "Bazy relacyjne to PostgreSQL, MySQL – Git zarządza historią zmian w kodzie."
+                    }
+                ],
+                "correctExplanation": "Git to rozproszony system kontroli wersji, który śledzi zmiany w plikach i umożliwia współpracę wielu programistów nad tym samym kodem. Każdy programista ma pełną kopię repozytorium, co pozwala pracować offline i łączyć zmiany. Git jest fundamentalnym narzędziem w każdym zespole programistycznym."
+            },
+            {
+                "id": "rekr-p-002",
+                "question": "Co to jest REST API?",
+                "options": [
+                    {
+                        "text": "Styl architektury API oparty na protokole HTTP i zasobach",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Biblioteka JavaScript do tworzenia interfejsów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Biblioteki UI to React, Vue – REST to styl projektowania API."
+                    },
+                    {
+                        "text": "Typ bazy danych dokumentowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Bazy dokumentowe to MongoDB – REST to architektura komunikacji."
+                    },
+                    {
+                        "text": "Framework do testowania automatycznego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Frameworki testowe to Jest, Cypress – REST definiuje sposób komunikacji klient-serwer."
+                    }
+                ],
+                "correctExplanation": "REST (Representational State Transfer) to styl architektury API, który wykorzystuje metody HTTP (GET, POST, PUT, DELETE) do operacji na zasobach. Zasoby identyfikowane są przez URL-e (np. /api/users/1). REST jest bezstanowy – serwer nie pamięta poprzednich zapytań. Jest to najpopularniejszy sposób budowania API w aplikacjach webowych."
+            },
+            {
+                "id": "rekr-p-003",
+                "question": "Co to jest SQL?",
+                "options": [
+                    {
+                        "text": "Język zapytań do zarządzania danymi w bazach relacyjnych",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Protokół szyfrowania komunikacji",
+                        "isCorrect": false,
+                        "wrongExplanation": "Szyfrowanie to TLS/SSL – SQL to język operowania na danych."
+                    },
+                    {
+                        "text": "System operacyjny dla serwerów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Systemy serwerowe to Linux, Windows Server – SQL to język baz danych."
+                    },
+                    {
+                        "text": "Narzędzie do budowania interfejsów graficznych",
+                        "isCorrect": false,
+                        "wrongExplanation": "UI buduje się w HTML/CSS/JS – SQL służy do operacji na danych w bazach."
+                    }
+                ],
+                "correctExplanation": "SQL (Structured Query Language) to standardowy język do zarządzania danymi w relacyjnych bazach danych. Pozwala tworzyć tabele, wstawiać dane, wyszukiwać, aktualizować i usuwać rekordy. Podstawowe polecenia to SELECT (odczyt), INSERT (zapis), UPDATE (modyfikacja) i DELETE (usuwanie). SQL jest jedną z najważniejszych umiejętności dla programistów backend."
+            },
+            {
+                "id": "rekr-p-004",
+                "question": "Co to jest HTTP status code 404?",
+                "options": [
+                    {
+                        "text": "Nie znaleziono żądanego zasobu",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Serwer działa poprawnie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Poprawne działanie to kod 200 OK – 404 oznacza brak zasobu."
+                    },
+                    {
+                        "text": "Błąd wewnętrzny serwera",
+                        "isCorrect": false,
+                        "wrongExplanation": "Błąd wewnętrzny to kod 500 – 404 mówi, że zasób nie istnieje."
+                    },
+                    {
+                        "text": "Przekierowanie na inną stronę",
+                        "isCorrect": false,
+                        "wrongExplanation": "Przekierowania to kody 3xx (301, 302) – 404 to brak zasobu."
+                    }
+                ],
+                "correctExplanation": "Kod HTTP 404 (Not Found) oznacza, że serwer nie znalazł żądanego zasobu pod podanym adresem URL. To jeden z najczęstszych kodów błędów w internecie. Może oznaczać, że strona została usunięta, przeniesiona lub URL został wpisany z błędem. Kody 4xx generalnie oznaczają błędy po stronie klienta (nieprawidłowe zapytanie)."
+            },
+            {
+                "id": "rekr-p-005",
+                "question": "Co to jest JSON?",
+                "options": [
+                    {
+                        "text": "Lekki format wymiany danych oparty na składni JavaScript",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Język programowania serwerowego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Języki serwerowe to Node.js, Python – JSON to format danych."
+                    },
+                    {
+                        "text": "Protokół komunikacji sieciowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Protokoły sieciowe to HTTP, TCP – JSON to format reprezentacji danych."
+                    },
+                    {
+                        "text": "System zarządzania bazą danych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Systemy bazodanowe to MySQL, MongoDB – JSON to format tekstowy danych."
+                    }
+                ],
+                "correctExplanation": "JSON (JavaScript Object Notation) to lekki, czytelny dla ludzi format wymiany danych. Używa par klucz-wartość i tablic do reprezentacji strukturalnych danych. Choć wywodzi się z JavaScriptu, jest niezależny od języka i obsługiwany praktycznie wszędzie. Jest standardowym formatem komunikacji w REST API."
+            }
+        ],
+        "Zaawansowany": [
+            {
+                "id": "rekr-z-001",
+                "question": "Co to jest indeks w bazie danych i kiedy go używać?",
+                "options": [
+                    {
+                        "text": "Struktura przyspieszająca wyszukiwanie kosztem wolniejszego zapisu",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Kopia zapasowa tabeli tworzona automatycznie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Kopie zapasowe to backup – indeks to struktura optymalizująca zapytania."
+                    },
+                    {
+                        "text": "Unikalny identyfikator rekordu",
+                        "isCorrect": false,
+                        "wrongExplanation": "Unikalny ID to klucz główny (primary key) – indeks to osobna struktura."
+                    },
+                    {
+                        "text": "Typ relacji między tabelami",
+                        "isCorrect": false,
+                        "wrongExplanation": "Relacje to foreign keys – indeks przyspiesza wyszukiwanie."
+                    }
+                ],
+                "correctExplanation": "Indeks w bazie danych to dodatkowa struktura danych (najczęściej B-tree), która przyspiesza wyszukiwanie rekordów kosztem wolniejszego zapisu i dodatkowej pamięci. Działa jak spis treści w książce – zamiast czytać wszystko, od razu znajdujesz właściwą stronę. Indeksy warto tworzyć na kolumnach często używanych w WHERE, JOIN i ORDER BY."
+            },
+            {
+                "id": "rekr-z-002",
+                "question": "Czym się różni autentykacja od autoryzacji?",
+                "options": [
+                    {
+                        "text": "Autentykacja weryfikuje tożsamość, autoryzacja sprawdza uprawnienia",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "To synonimy oznaczające to samo",
+                        "isCorrect": false,
+                        "wrongExplanation": "To dwa odrębne procesy – autentykacja mówi KIM jesteś, autoryzacja CO możesz zrobić."
+                    },
+                    {
+                        "text": "Autentykacja dotyczy serwera, autoryzacja klienta",
+                        "isCorrect": false,
+                        "wrongExplanation": "Oba procesy mogą zachodzić po obu stronach – różnica to tożsamość vs uprawnienia."
+                    },
+                    {
+                        "text": "Autentykacja jest opcjonalna, autoryzacja obowiązkowa",
+                        "isCorrect": false,
+                        "wrongExplanation": "Oba mogą być wymagane lub opcjonalne – zależy od kontekstu aplikacji."
+                    }
+                ],
+                "correctExplanation": "Autentykacja (authentication) to proces weryfikacji tożsamości – potwierdzenie, że jesteś tym, za kogo się podajesz (np. login + hasło). Autoryzacja (authorization) to sprawdzenie, czy zidentyfikowany użytkownik ma prawo do wykonania danej operacji (np. czy admin może usunąć konto). Najpierw następuje autentykacja, potem autoryzacja."
+            },
+            {
+                "id": "rekr-z-003",
+                "question": "Co to jest WebSocket?",
+                "options": [
+                    {
+                        "text": "Protokół umożliwiający dwukierunkową komunikację w czasie rzeczywistym",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Rodzaj gniazdka sieciowego w routerze",
+                        "isCorrect": false,
+                        "wrongExplanation": "Gniazdka sieciowe (RJ45) to fizyczne złącza – WebSocket to protokół programowy."
+                    },
+                    {
+                        "text": "Framework do budowania API",
+                        "isCorrect": false,
+                        "wrongExplanation": "Frameworki API to Express, FastAPI – WebSocket to protokół komunikacji."
+                    },
+                    {
+                        "text": "Typ szyfrowania end-to-end",
+                        "isCorrect": false,
+                        "wrongExplanation": "Szyfrowanie E2E to np. Signal Protocol – WebSocket to protokół dwukierunkowej komunikacji."
+                    }
+                ],
+                "correctExplanation": "WebSocket to protokół komunikacji, który utrzymuje stałe, dwukierunkowe połączenie między klientem a serwerem. W odróżnieniu od HTTP, gdzie klient musi ciągle odpytywać serwer, WebSocket pozwala serwerowi wysyłać dane do klienta w dowolnym momencie. Jest idealny do czatów, gier online i aktualizacji w czasie rzeczywistym."
+            },
+            {
+                "id": "rekr-z-004",
+                "question": "Co to jest CAP theorem?",
+                "options": [
+                    {
+                        "text": "Twierdzenie, że system rozproszony może zapewnić max 2 z 3: spójność, dostępność, odporność na partycje",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Algorytm sortowania danych w bazie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Algorytmy sortowania to np. QuickSort – CAP to twierdzenie o systemach rozproszonych."
+                    },
+                    {
+                        "text": "Standard bezpieczeństwa aplikacji webowych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Standardy bezpieczeństwa to np. OWASP – CAP dotyczy kompromisów w systemach rozproszonych."
+                    },
+                    {
+                        "text": "Wzorzec projektowy do obsługi błędów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wzorce obsługi błędów to np. Circuit Breaker – CAP to fundamentalne twierdzenie o bazach rozproszonych."
+                    }
+                ],
+                "correctExplanation": "CAP theorem (twierdzenie Brewera) mówi, że rozproszony system danych może jednocześnie zapewnić co najwyżej dwie z trzech gwarancji: Consistency (spójność), Availability (dostępność), Partition tolerance (odporność na partycje sieciowe). W praktyce partycje są nieuniknione, więc wybierasz między spójnością (CP, np. MongoDB) a dostępnością (AP, np. Cassandra)."
+            },
+            {
+                "id": "rekr-z-005",
+                "question": "Co to jest CORS?",
+                "options": [
+                    {
+                        "text": "Mechanizm pozwalający serwerowi kontrolować, które domeny mogą wykonywać zapytania",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Typ ataku hakerskiego na aplikację webową",
+                        "isCorrect": false,
+                        "wrongExplanation": "Ataki to np. XSS, CSRF – CORS to mechanizm bezpieczeństwa przeglądarki."
+                    },
+                    {
+                        "text": "Framework do testowania międzyprzeglądarkowego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Testy międzyprzeglądarkowe to np. BrowserStack – CORS to polityka bezpieczeństwa."
+                    },
+                    {
+                        "text": "Protokół kompresji zasobów webowych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Kompresja to gzip/brotli – CORS kontroluje dostęp międzydomenowy."
+                    }
+                ],
+                "correctExplanation": "CORS (Cross-Origin Resource Sharing) to mechanizm bezpieczeństwa przeglądarki, który kontroluje, czy strona z jednej domeny może wykonywać zapytania do serwera na innej domenie. Domyślnie przeglądarka blokuje takie zapytania. Serwer musi jawnie zezwolić na dostęp, wysyłając odpowiednie nagłówki (Access-Control-Allow-Origin). Jest to częste źródło problemów podczas developmentu."
+            }
+        ]
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "category": "Biologia",
+    "levels": {
+        "Podstawowy": [
+            {
+                "id": "bio-p-001",
+                "question": "Co to jest komórka?",
+                "options": [
+                    {
+                        "text": "Podstawowa jednostka strukturalna i funkcjonalna organizmów żywych",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Najmniejszy atom w organizmie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Atomy to jednostki materii – komórka to biologiczna struktura zbudowana z wielu cząsteczek."
+                    },
+                    {
+                        "text": "Rodzaj tkanki mięśniowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Tkanka mięśniowa to jeden z typów tkanek – komórka to podstawowy budulec wszystkich tkanek."
+                    },
+                    {
+                        "text": "Organ odpowiedzialny za trawienie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Za trawienie odpowiada układ pokarmowy – komórka to elementarna jednostka życia."
+                    }
+                ],
+                "correctExplanation": "Komórka to najmniejsza jednostka żywego organizmu zdolna do samodzielnego funkcjonowania. Zawiera materiał genetyczny (DNA), jest otoczona błoną komórkową i przeprowadza procesy życiowe jak oddychanie, odżywianie i rozmnażanie. Organizm ludzki składa się z ok. 37 bilionów komórek różnych typów."
+            },
+            {
+                "id": "bio-p-002",
+                "question": "Co to jest DNA?",
+                "options": [
+                    {
+                        "text": "Kwas deoksyrybonukleinowy – nośnik informacji genetycznej",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Rodzaj białka budującego mięśnie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Białka mięśniowe to aktyna i miozyna – DNA przechowuje informację genetyczną."
+                    },
+                    {
+                        "text": "Hormon regulujący wzrost",
+                        "isCorrect": false,
+                        "wrongExplanation": "Hormony wzrostu to np. somatotropina – DNA to cząsteczka dziedziczności."
+                    },
+                    {
+                        "text": "Witamina niezbędna do życia",
+                        "isCorrect": false,
+                        "wrongExplanation": "Witaminy to związki organiczne wspierające metabolizm – DNA koduje geny."
+                    }
+                ],
+                "correctExplanation": "DNA (kwas deoksyrybonukleinowy) to cząsteczka przechowująca informację genetyczną wszystkich znanych organizmów żywych. Ma strukturę podwójnej helisy – dwóch nici skręconych wokół siebie. Sekwencja czterech zasad azotowych (A, T, C, G) w DNA koduje instrukcje do budowy białek, które wykonują większość funkcji w komórce."
+            },
+            {
+                "id": "bio-p-003",
+                "question": "Co to jest fotosynteza?",
+                "options": [
+                    {
+                        "text": "Proces, w którym rośliny zamieniają CO₂ i wodę w glukozę i tlen",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Proces trawienia pokarmu w żołądku",
+                        "isCorrect": false,
+                        "wrongExplanation": "Trawienie to rozkład pokarmu w układzie pokarmowym – fotosynteza to produkcja energii przez rośliny."
+                    },
+                    {
+                        "text": "Rozmnażanie bezpłciowe roślin",
+                        "isCorrect": false,
+                        "wrongExplanation": "Rozmnażanie bezpłciowe to np. podział – fotosynteza to wytwarzanie pożywienia."
+                    },
+                    {
+                        "text": "Proces starzenia się komórek",
+                        "isCorrect": false,
+                        "wrongExplanation": "Starzenie to senescencja – fotosynteza to synteza związków organicznych przy pomocy światła."
+                    }
+                ],
+                "correctExplanation": "Fotosynteza to proces, w którym rośliny, glony i niektóre bakterie wykorzystują energię światła słonecznego do przekształcenia dwutlenku węgla i wody w glukozę (cukier) i tlen. Zachodzi głównie w chloroplastach, dzięki chlorofilowi (zielonemu barwnikowi). Jest fundamentalnym procesem podtrzymującym życie na Ziemi – dostarcza tlen i jest bazą łańcucha pokarmowego."
+            },
+            {
+                "id": "bio-p-004",
+                "question": "Ile chromosomów ma człowiek?",
+                "options": [
+                    {
+                        "text": "46",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "23",
+                        "isCorrect": false,
+                        "wrongExplanation": "23 to liczba par chromosomów – łącznie człowiek ma 46 chromosomów (23 pary)."
+                    },
+                    {
+                        "text": "48",
+                        "isCorrect": false,
+                        "wrongExplanation": "48 chromosomów mają np. szympansy – człowiek ma 46."
+                    },
+                    {
+                        "text": "44",
+                        "isCorrect": false,
+                        "wrongExplanation": "44 to liczba autosomów (chromosomów niepłciowych) – łącznie z płciowymi jest 46."
+                    }
+                ],
+                "correctExplanation": "Człowiek ma 46 chromosomów, ułożonych w 23 pary. 22 pary to autosomy (chromosomy niepłciowe), a 23. para to chromosomy płciowe (XX u kobiet, XY u mężczyzn). Każdy rodzic przekazuje dziecku po 23 chromosomy. Nieprawidłowa liczba chromosomów może prowadzić do zaburzeń genetycznych, np. zespołu Downa (trisomia 21)."
+            },
+            {
+                "id": "bio-p-005",
+                "question": "Co to jest ekosystem?",
+                "options": [
+                    {
+                        "text": "Zespół organizmów żywych i ich środowiska, powiązanych przepływem energii",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Pojedynczy organizm w swoim środowisku",
+                        "isCorrect": false,
+                        "wrongExplanation": "Pojedynczy organizm to osobnik – ekosystem obejmuje całą społeczność i środowisko."
+                    },
+                    {
+                        "text": "Gatunek roślin dominujący w danym regionie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Dominujący gatunek to część ekosystemu – ekosystem to cały system powiązań."
+                    },
+                    {
+                        "text": "Proces ewolucji gatunków",
+                        "isCorrect": false,
+                        "wrongExplanation": "Ewolucja to zmiana gatunków w czasie – ekosystem to aktualny układ przyrody."
+                    }
+                ],
+                "correctExplanation": "Ekosystem to funkcjonalna jednostka przyrody obejmująca wszystkie organizmy żywe (biocenozę) i ich nieożywione środowisko (biotop) w danym obszarze, powiązane przepływem energii i obiegiem materii. Przykłady to las, jezioro, rafa koralowa. Każdy ekosystem ma producentów (rośliny), konsumentów (zwierzęta) i reducentów (grzyby, bakterie)."
+            }
+        ],
+        "Zaawansowany": [
+            {
+                "id": "bio-z-001",
+                "question": "Co to jest CRISPR-Cas9?",
+                "options": [
+                    {
+                        "text": "Narzędzie do precyzyjnej edycji genów w DNA",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Antybiotyk nowej generacji",
+                        "isCorrect": false,
+                        "wrongExplanation": "Antybiotyki zwalczają bakterie – CRISPR to technologia modyfikacji genetycznej."
+                    },
+                    {
+                        "text": "Typ szczepionki mRNA",
+                        "isCorrect": false,
+                        "wrongExplanation": "Szczepionki mRNA to inna technologia – CRISPR bezpośrednio edytuje DNA."
+                    },
+                    {
+                        "text": "Metoda klonowania organizmów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Klonowanie tworzy kopię organizmu – CRISPR modyfikuje konkretne geny."
+                    }
+                ],
+                "correctExplanation": "CRISPR-Cas9 to rewolucyjna technologia edycji genów, która pozwala precyzyjnie wycinać, modyfikować lub wstawiać fragmenty DNA. Cas9 to białko działające jak \"nożyczki molekularne\", a CRISPR to sekwencja RNA naprowadzająca je na właściwe miejsce. Technologia ta ma potencjał w leczeniu chorób genetycznych, ale budzi też debaty etyczne."
+            },
+            {
+                "id": "bio-z-002",
+                "question": "Co to jest apoptoza?",
+                "options": [
+                    {
+                        "text": "Programowana śmierć komórki kontrolowana przez organizm",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Niekontrolowany podział komórek nowotworowych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Niekontrolowany podział to neoplazja/rak – apoptoza to kontrolowane samobójstwo komórki."
+                    },
+                    {
+                        "text": "Proces wchłaniania substancji przez komórkę",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wchłanianie to endocytoza – apoptoza to zaprogramowana eliminacja komórki."
+                    },
+                    {
+                        "text": "Mutacja genów pod wpływem promieniowania",
+                        "isCorrect": false,
+                        "wrongExplanation": "Mutacje radiacyjne to mutageneza – apoptoza to naturalny mechanizm eliminacji komórek."
+                    }
+                ],
+                "correctExplanation": "Apoptoza to programowana śmierć komórki – kontrolowany proces, w którym komórka \"popełnia samobójstwo\" na polecenie organizmu. Jest kluczowa dla prawidłowego rozwoju (np. formowanie palców u płodu), utrzymania homeostazy i eliminacji uszkodzonych komórek. Zaburzenia apoptozy prowadzą do chorób: zbyt mało – nowotwory, zbyt dużo – choroby neurodegeneracyjne."
+            },
+            {
+                "id": "bio-z-003",
+                "question": "Co to jest PCR (Polymerase Chain Reaction)?",
+                "options": [
+                    {
+                        "text": "Technika powielania fragmentów DNA w laboratorium",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Metoda sekwencjonowania białek",
+                        "isCorrect": false,
+                        "wrongExplanation": "Sekwencjonowanie białek to proteomika – PCR powiela DNA."
+                    },
+                    {
+                        "text": "Reakcja chemiczna w fotosyntez",
+                        "isCorrect": false,
+                        "wrongExplanation": "Reakcje fotosyntezy to cykl Calvina – PCR to technika laboratoryjna."
+                    },
+                    {
+                        "text": "Proces naprawy DNA w komórce",
+                        "isCorrect": false,
+                        "wrongExplanation": "Naprawa DNA to mechanizmy komórkowe – PCR to technika stosowana in vitro."
+                    }
+                ],
+                "correctExplanation": "PCR to technika laboratoryjna pozwalająca powielić (amplifikować) nawet najmniejszy fragment DNA do milionów kopii w kilka godzin. Wykorzystuje cykliczne podgrzewanie i chłodzenie próbki z polimerazą DNA. Jest fundamentem diagnostyki genetycznej, kryminalistyki, testów na patogeny (np. testy COVID) i badań naukowych."
+            },
+            {
+                "id": "bio-z-004",
+                "question": "Co to jest epigenetyka?",
+                "options": [
+                    {
+                        "text": "Badanie zmian ekspresji genów bez modyfikacji sekwencji DNA",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Nauka o dziedziczeniu cech mendlowskim",
+                        "isCorrect": false,
+                        "wrongExplanation": "Dziedziczenie mendlowskie to klasyczna genetyka – epigenetyka bada modyfikacje ponad DNA."
+                    },
+                    {
+                        "text": "Technologia tworzenia organizmów transgenicznych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Organizmy transgeniczne to GMO – epigenetyka bada regulację ekspresji genów."
+                    },
+                    {
+                        "text": "Metoda klonowania terapeutycznego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Klonowanie terapeutyczne to reprodukcja komórek – epigenetyka to nauka o regulacji genów."
+                    }
+                ],
+                "correctExplanation": "Epigenetyka bada dziedziczne zmiany w ekspresji genów, które nie wynikają ze zmian w sekwencji DNA. Mechanizmy epigenetyczne (metylacja DNA, modyfikacje histonów) działają jak \"przełączniki\" włączające i wyłączające geny. Środowisko, dieta i stres mogą powodować zmiany epigenetyczne, które są potencjalnie dziedziczone przez kolejne pokolenia."
+            },
+            {
+                "id": "bio-z-005",
+                "question": "Co to jest mikrobiom?",
+                "options": [
+                    {
+                        "text": "Zespół wszystkich mikroorganizmów żyjących w i na organizmie gospodarza",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Pojedyncza bakteria chorobotwórcza",
+                        "isCorrect": false,
+                        "wrongExplanation": "Pojedyncza bakteria to patogen – mikrobiom to cała społeczność mikroorganizmów."
+                    },
+                    {
+                        "text": "Sztuczne środowisko do hodowli bakterii",
+                        "isCorrect": false,
+                        "wrongExplanation": "Sztuczne środowisko hodowlane to pożywka – mikrobiom żyje w naturalnym organizmie."
+                    },
+                    {
+                        "text": "Lek przeciwbakteryjny nowej generacji",
+                        "isCorrect": false,
+                        "wrongExplanation": "Leki przeciwbakteryjne to antybiotyki – mikrobiom to ekosystem drobnoustrojów w ciele."
+                    }
+                ],
+                "correctExplanation": "Mikrobiom to ogół mikroorganizmów (bakterii, grzybów, wirusów) żyjących w i na organizmie gospodarza. Mikrobiom jelitowy człowieka zawiera biliony bakterii wpływających na trawienie, odporność, a nawet nastrój. Badania pokazują, że zaburzenia mikrobiomu są powiązane z chorobami autoimmunologicznymi, otyłością i depresją."
+            }
+        ]
+    }
+}

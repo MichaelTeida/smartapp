@@ -1,0 +1,279 @@
+{
+    "category": "Informatyka",
+    "levels": {
+        "Podstawowy": [
+            {
+                "id": "inf-p-001",
+                "question": "Co to jest algorytm?",
+                "options": [
+                    {
+                        "text": "Skończony zbiór kroków prowadzących do rozwiązania problemu",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Rodzaj języka programowania",
+                        "isCorrect": false,
+                        "wrongExplanation": "Języki programowania to narzędzia implementacji – algorytm to abstrakcyjny przepis."
+                    },
+                    {
+                        "text": "Fizyczny komponent procesora",
+                        "isCorrect": false,
+                        "wrongExplanation": "Komponenty procesora to ALU, rejestry – algorytm to koncepcja logiczna."
+                    },
+                    {
+                        "text": "System operacyjny dla serwerów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Systemy serwerowe to Linux, Windows Server – algorytm to przepis na rozwiązanie."
+                    }
+                ],
+                "correctExplanation": "Algorytm to precyzyjny, skończony zbiór instrukcji prowadzących do rozwiązania określonego problemu. Musi mieć jasno określone wejście, wyjście i skończoną liczbę kroków. Przykład: przepis kulinarny to algorytm – masz składniki (wejście), kroki (instrukcje) i gotowe danie (wyjście)."
+            },
+            {
+                "id": "inf-p-002",
+                "question": "Co to jest bit?",
+                "options": [
+                    {
+                        "text": "Najmniejsza jednostka informacji – 0 lub 1",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Jednostka miary prędkości internetu",
+                        "isCorrect": false,
+                        "wrongExplanation": "Prędkość mierzy się w bitach na sekundę (bps), ale sam bit to jednostka informacji."
+                    },
+                    {
+                        "text": "Rodzaj pamięci komputerowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Pamięci to RAM, ROM – bit to elementarna jednostka danych."
+                    },
+                    {
+                        "text": "Skrót od Binary Internet Transfer",
+                        "isCorrect": false,
+                        "wrongExplanation": "To wymyślony termin – bit pochodzi od binary digit (cyfra dwójkowa)."
+                    }
+                ],
+                "correctExplanation": "Bit (binary digit) to najmniejsza jednostka informacji w informatyce, przyjmująca wartość 0 lub 1. Osiem bitów tworzy jeden bajt. Cała informacja cyfrowa – tekst, obrazy, dźwięk, wideo – jest ostatecznie reprezentowana jako ciągi bitów. Komputer przetwarza miliardy bitów na sekundę."
+            },
+            {
+                "id": "inf-p-003",
+                "question": "Co to jest baza danych?",
+                "options": [
+                    {
+                        "text": "Zorganizowany zbiór danych umożliwiający przechowywanie i wyszukiwanie",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Fizyczny serwer przechowujący pliki",
+                        "isCorrect": false,
+                        "wrongExplanation": "Serwer to sprzęt – baza danych to logiczna struktura organizacji danych."
+                    },
+                    {
+                        "text": "Program do edycji tekstu",
+                        "isCorrect": false,
+                        "wrongExplanation": "Edytory tekstu to Word, Notepad – baza danych zarządza strukturalnymi danymi."
+                    },
+                    {
+                        "text": "Protokół komunikacji sieciowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Protokoły to HTTP, TCP – baza danych to system przechowywania informacji."
+                    }
+                ],
+                "correctExplanation": "Baza danych to zorganizowany zbiór danych, który umożliwia efektywne przechowywanie, wyszukiwanie, aktualizowanie i usuwanie informacji. Bazy relacyjne (MySQL, PostgreSQL) organizują dane w tabelach z relacjami, a bazy NoSQL (MongoDB) w dokumentach lub kolekcjach. Prawie każda aplikacja korzysta z bazy danych."
+            },
+            {
+                "id": "inf-p-004",
+                "question": "Czym jest adres URL?",
+                "options": [
+                    {
+                        "text": "Ujednolicony adres zasobu w internecie",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Numer identyfikacyjny komputera w sieci",
+                        "isCorrect": false,
+                        "wrongExplanation": "Numer ID komputera to adres IP – URL to czytelny adres zasobu."
+                    },
+                    {
+                        "text": "Typ szyfrowania danych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Szyfrowanie to AES, RSA – URL wskazuje lokalizację zasobu w sieci."
+                    },
+                    {
+                        "text": "Język znaczników do tworzenia stron",
+                        "isCorrect": false,
+                        "wrongExplanation": "Język znaczników to HTML – URL to adres, pod którym strona jest dostępna."
+                    }
+                ],
+                "correctExplanation": "URL (Uniform Resource Locator) to adres wskazujący lokalizację zasobu w internecie. Składa się z protokołu (https://), domeny (www.example.com), ścieżki (/strona) i opcjonalnych parametrów. Wpisując URL w przeglądarkę, mówisz jej dokładnie, gdzie szukać żądanej strony lub pliku."
+            },
+            {
+                "id": "inf-p-005",
+                "question": "Co to jest HTML?",
+                "options": [
+                    {
+                        "text": "Język znaczników do tworzenia struktury stron internetowych",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Język programowania do tworzenia gier",
+                        "isCorrect": false,
+                        "wrongExplanation": "Gry tworzy się w C++, C#, JS – HTML definiuje strukturę stron, nie logikę."
+                    },
+                    {
+                        "text": "System zarządzania bazą danych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Bazy danych to MySQL, MongoDB – HTML to język struktury dokumentów webowych."
+                    },
+                    {
+                        "text": "Protokół przesyłania poczty elektronicznej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Protokoły mailowe to SMTP, IMAP – HTML opisuje strukturę stron."
+                    }
+                ],
+                "correctExplanation": "HTML (HyperText Markup Language) to standardowy język znaczników używany do tworzenia struktury stron internetowych. Za pomocą tagów (np. <h1>, <p>, <div>) definiujesz nagłówki, paragrafy, linki, obrazy i inne elementy strony. HTML odpowiada za strukturę – wygląd dodaje CSS, a interaktywność JavaScript."
+            }
+        ],
+        "Zaawansowany": [
+            {
+                "id": "inf-z-001",
+                "question": "Co to jest notacja Big O?",
+                "options": [
+                    {
+                        "text": "Sposób opisywania złożoności obliczeniowej algorytmu",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Format zapisu liczb w systemie ósemkowym",
+                        "isCorrect": false,
+                        "wrongExplanation": "System ósemkowy to octal – Big O opisuje wydajność algorytmów."
+                    },
+                    {
+                        "text": "Standard kodowania znaków Unicode",
+                        "isCorrect": false,
+                        "wrongExplanation": "Unicode to standard kodowania tekstu – Big O to narzędzie analizy algorytmów."
+                    },
+                    {
+                        "text": "Typ architektury procesora",
+                        "isCorrect": false,
+                        "wrongExplanation": "Architektury to x86, ARM – Big O to matematyczny opis złożoności."
+                    }
+                ],
+                "correctExplanation": "Notacja Big O to matematyczny sposób opisywania, jak szybko rośnie czas lub pamięć potrzebna algorytmowi wraz ze wzrostem rozmiaru danych wejściowych. O(1) oznacza stały czas, O(n) liniowy, O(n²) kwadratowy. Pozwala porównywać algorytmy niezależnie od sprzętu – ważne jest, jak skalują się z danymi."
+            },
+            {
+                "id": "inf-z-002",
+                "question": "Co to jest stos (stack) jako struktura danych?",
+                "options": [
+                    {
+                        "text": "Struktura LIFO – ostatni dodany element jest pobierany jako pierwszy",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Struktura FIFO – pierwszy dodany element jest pobierany jako pierwszy",
+                        "isCorrect": false,
+                        "wrongExplanation": "FIFO to kolejka (queue) – stos działa odwrotnie: ostatni wchodzi, pierwszy wychodzi."
+                    },
+                    {
+                        "text": "Struktura umożliwiająca losowy dostęp do elementów",
+                        "isCorrect": false,
+                        "wrongExplanation": "Losowy dostęp to cecha tablicy – stos pozwala operować tylko na wierzchołku."
+                    },
+                    {
+                        "text": "Struktura przechowująca dane jako pary klucz-wartość",
+                        "isCorrect": false,
+                        "wrongExplanation": "Pary klucz-wartość to mapa/słownik – stos to liniowa struktura LIFO."
+                    }
+                ],
+                "correctExplanation": "Stos (stack) to struktura danych działająca na zasadzie LIFO (Last In, First Out) – ostatni dodany element jest pobierany jako pierwszy, jak stos talerzy. Podstawowe operacje to push (dodaj na wierzch) i pop (zdejmij z wierzchu). Stos jest używany m.in. do zarządzania wywołaniami funkcji, operacji cofania (undo) i parsowania wyrażeń."
+            },
+            {
+                "id": "inf-z-003",
+                "question": "Co to jest tablica hashująca (hash table)?",
+                "options": [
+                    {
+                        "text": "Struktura mapująca klucze na wartości za pomocą funkcji skrótu",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Tablica przechowująca dane posortowane alphabetycznie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Sortowane dane to cecha drzew BST – tablica hashująca używa funkcji hash."
+                    },
+                    {
+                        "text": "Mechanizm szyfrowania danych w bazie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Szyfrowanie to osobna dziedzina – hash table to struktura szybkiego dostępu do danych."
+                    },
+                    {
+                        "text": "Format pliku do przechowywania konfiguracji",
+                        "isCorrect": false,
+                        "wrongExplanation": "Formaty konfiguracji to JSON, YAML – hash table to struktura danych w pamięci."
+                    }
+                ],
+                "correctExplanation": "Tablica hashująca to struktura danych, która mapuje klucze na wartości za pomocą funkcji skrótu (hash function). Funkcja hash zamienia klucz na indeks w tablicy, co pozwala na dostęp w czasie O(1) – niemal natychmiast. W JavaScript obiekt {} i Map to implementacje hash table. Jest to jedna z najważniejszych struktur danych w informatyce."
+            },
+            {
+                "id": "inf-z-004",
+                "question": "Co to jest deadlock?",
+                "options": [
+                    {
+                        "text": "Sytuacja, gdy dwa procesy wzajemnie czekają na zasoby trzymane przez drugiego",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Błąd składniowy w kodzie źródłowym",
+                        "isCorrect": false,
+                        "wrongExplanation": "Błędy składniowe to syntax errors – deadlock to problem współbieżności."
+                    },
+                    {
+                        "text": "Wirus blokujący dostęp do plików",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wirusy blokujące to ransomware – deadlock to problem logiczny w programach wielowątkowych."
+                    },
+                    {
+                        "text": "Limit połączeń do bazy danych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Limit połączeń to connection pool – deadlock to wzajemna blokada procesów."
+                    }
+                ],
+                "correctExplanation": "Deadlock (zakleszczenie) to sytuacja, w której dwa lub więcej procesów wzajemnie blokują się, czekając na zasoby trzymane przez siebie nawzajem. Żaden nie może kontynuować pracy. Klasyczny przykład: proces A trzyma zasób X i czeka na Y, a proces B trzyma Y i czeka na X. Zapobieganie wymaga odpowiedniego porządkowania dostępu do zasobów."
+            },
+            {
+                "id": "inf-z-005",
+                "question": "Co to jest graf w informatyce?",
+                "options": [
+                    {
+                        "text": "Struktura danych składająca się z wierzchołków połączonych krawędziami",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Wykres słupkowy prezentujący dane statystyczne",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wykresy statystyczne to wizualizacje – graf w informatyce to abstrakcyjna struktura danych."
+                    },
+                    {
+                        "text": "Narzędzie do tworzenia interfejsów graficznych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Narzędzia GUI to np. Figma – graf to matematyczna struktura relacji."
+                    },
+                    {
+                        "text": "Algorytm sortowania danych",
+                        "isCorrect": false,
+                        "wrongExplanation": "Algorytmy sortowania to QuickSort, MergeSort – graf to struktura danych, nie algorytm."
+                    }
+                ],
+                "correctExplanation": "Graf to struktura danych składająca się z wierzchołków (nodes) i krawędzi (edges) łączących je. Grafy modelują relacje: sieci społeczne (użytkownicy = wierzchołki, znajomości = krawędzie), mapy (miasta = wierzchołki, drogi = krawędzie), zależności w projektach. Mogą być skierowane lub nieskierowane, ważone lub nieważone."
+            }
+        ]
+    }
+}

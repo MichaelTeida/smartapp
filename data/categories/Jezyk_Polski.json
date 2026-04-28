@@ -1,0 +1,264 @@
+{
+  "category": "Język Polski",
+  "levels": {
+    "Podstawowy": [
+      {
+        "id": "polski-p-001",
+        "question": "Co to jest podmiot w zdaniu?",
+        "options": [
+          {
+            "text": "Część zdania określająca, kto lub co wykonuje czynność",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Część zdania określająca, gdzie odbywa się czynność",
+            "isCorrect": false,
+            "wrongExplanation": "Okolicznik miejsca określa, gdzie coś się dzieje – podmiot mówi KTO lub CO."
+          },
+          {
+            "text": "Część zdania opisująca cechę rzeczownika",
+            "isCorrect": false,
+            "wrongExplanation": "Cechy rzeczownika opisuje przydawka – podmiot wskazuje wykonawcę czynności."
+          },
+          {
+            "text": "Część zdania wyrażająca emocje mówiącego",
+            "isCorrect": false,
+            "wrongExplanation": "Emocje wyrażają wykrzykniki – podmiot to składnik zdania pełniący funkcję gramatyczną."
+          }
+        ],
+        "correctExplanation": "Podmiot to główna część zdania, która wskazuje, kto lub co wykonuje czynność (lub kogo/czego dotyczy stan). Najczęściej jest rzeczownikiem w mianowniku. Na przykład w zdaniu „Kot śpi" podmiotem jest „Kot", bo to on wykonuje czynność spania."
+      },
+      {
+        "id": "polski-p-002",
+        "question": "Ile przypadków ma język polski?",
+        "options": [
+          {
+            "text": "5",
+            "isCorrect": false,
+            "wrongExplanation": "Pięć przypadków ma np. język grecki – w polskim jest ich więcej."
+          },
+          {
+            "text": "6",
+            "isCorrect": false,
+            "wrongExplanation": "Sześć przypadków ma np. język rosyjski – polski ma o jeden więcej."
+          },
+          {
+            "text": "7",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "8",
+            "isCorrect": false,
+            "wrongExplanation": "Osiem przypadków ma np. język fiński – w polskim jest ich dokładnie siedem."
+          }
+        ],
+        "correctExplanation": "Język polski ma 7 przypadków: mianownik (kto? co?), dopełniacz (kogo? czego?), celownik (komu? czemu?), biernik (kogo? co?), narzędnik (z kim? z czym?), miejscownik (o kim? o czym?) i wołacz (o!). Każdy przypadek odpowiada na inne pytanie i pełni inną funkcję w zdaniu."
+      },
+      {
+        "id": "polski-p-003",
+        "question": "Co to jest epitet w literaturze?",
+        "options": [
+          {
+            "text": "Zestawienie dwóch sprzecznych pojęć",
+            "isCorrect": false,
+            "wrongExplanation": "Zestawienie sprzeczności to oksymoron, np. „żywy trup" – epitet opisuje cechę." },{"text": "Środek stylistyczny – określenie uwydatniające cechę osoby lub rzeczy","isCorrect": true,"wrongExplanation": ""
+          },
+          {
+            "text": "Powtórzenie tego samego wyrazu na początku wersów",
+            "isCorrect": false,
+            "wrongExplanation": "Powtórzenie na początku wersów to anafora – epitet to przymiotnik określający rzeczownik."
+          },
+          {
+            "text": "Przenośne znaczenie całego zdania",
+            "isCorrect": false,
+            "wrongExplanation": "Przenośne znaczenie to metafora – epitet to konkretne określenie cechy."
+          }
+        ],
+        "correctExplanation": "Epitet to środek stylistyczny polegający na użyciu określenia (najczęściej przymiotnika), które uwydatnia cechę opisywanej osoby, rzeczy lub zjawiska. Na przykład „srebrny księżyc", „gorzkie łzy", „cicha noc". Epitety nadają tekstowi obrazowość i pomagają czytelnikowi wyobrazić sobie opisywaną scenę."
+      },
+      {
+        "id": "polski-p-004",
+        "question": "Który z poniższych utworów napisał Adam Mickiewicz?",
+        "options": [
+          {
+            "text": "Lalka",
+            "isCorrect": false,
+            "wrongExplanation": "„Lalka" to powieść Bolesława Prusa – jeden z najważniejszych utworów polskiego pozytywizmu." },{"text": "Pan Tadeusz","isCorrect": true,"wrongExplanation": ""
+          },
+          {
+            "text": "Quo Vadis",
+            "isCorrect": false,
+            "wrongExplanation": "„Quo Vadis" napisał Henryk Sienkiewicz – za tę powieść otrzymał Nagrodę Nobla." },{"text": "Ferdydurke","isCorrect": false,"wrongExplanation": "„Ferdydurke" to dzieło Witolda Gombrowicza – przedstawiciela polskiej awangardy literackiej."
+          }
+        ],
+        "correctExplanation": "„Pan Tadeusz" to epopeja narodowa napisana przez Adama Mickiewicza w 1834 roku. Pełny tytuł brzmi „Pan Tadeusz, czyli ostatni zajazd na Litwie". Utwór przedstawia obraz szlachty polskiej na Litwie w czasach napoleońskich i jest uważany za arcydzieło polskiej literatury romantycznej."
+      },
+      {
+        "id": "polski-p-005",
+        "question": "Co to jest rzeczownik?",
+        "options": [
+          {
+            "text": "Część mowy nazywająca osoby, rzeczy, zjawiska, pojęcia",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Część mowy określająca czynność lub stan",
+            "isCorrect": false,
+            "wrongExplanation": "Czynności i stany opisuje czasownik – rzeczownik nazywa byty i pojęcia."
+          },
+          {
+            "text": "Część mowy łącząca zdania w całość",
+            "isCorrect": false,
+            "wrongExplanation": "Zdania łączą spójniki (i, ale, więc) – rzeczownik to samodzielna część mowy."
+          },
+          {
+            "text": "Część mowy zastępująca inne wyrazy",
+            "isCorrect": false,
+            "wrongExplanation": "Wyrazy zastępujące inne to zaimki (on, ten, ktoś) – rzeczownik nazywa konkretne byty."
+          }
+        ],
+        "correctExplanation": "Rzeczownik to samodzielna, odmienna część mowy, która nazywa osoby (nauczyciel), rzeczy (stół), zjawiska (burza), pojęcia abstrakcyjne (miłość) i inne byty. Odpowiada na pytania „kto?" lub „co?" i odmienia się przez przypadki, liczby, a w niektórych formach – przez rodzaje."
+      }
+    ],
+    "Zaawansowany": [
+      {
+        "id": "polski-z-001",
+        "question": "Co to jest synekdocha?",
+        "options": [
+          {
+            "text": "Trop polegający na użyciu części zamiast całości lub odwrotnie",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Powtórzenie tego samego dźwięku na końcu wersów",
+            "isCorrect": false,
+            "wrongExplanation": "Powtórzenie dźwięków na końcu wersów to rym – synekdocha jest tropem znaczeniowym."
+          },
+          {
+            "text": "Nadanie cech ludzkich przedmiotom",
+            "isCorrect": false,
+            "wrongExplanation": "Nadawanie cech ludzkich to personifikacja – synekdocha polega na zamianie zakresu pojęcia."
+          },
+          {
+            "text": "Celowe pomniejszenie znaczenia czegoś",
+            "isCorrect": false,
+            "wrongExplanation": "Pomniejszenie to litota – synekdocha to zamiana części na całość lub odwrotnie."
+          }
+        ],
+        "correctExplanation": "Synekdocha to odmiana metonimii, w której część zastępuje całość (np. „dach nad głową" zamiast „dom") lub całość zastępuje część (np. „Polska wygrała mecz" zamiast „polska drużyna"). Jest to jeden z podstawowych tropów retorycznych i literackich, często używany w mowie potocznej."
+      },
+      {
+        "id": "polski-z-002",
+        "question": "Czym jest narracja niewiarygodna (unreliable narrator)?",
+        "options": [
+          {
+            "text": "Narrator świadomie lub nieświadomie zniekształca przedstawianą rzeczywistość",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Narrator opowiada historię z perspektywy wielu postaci jednocześnie",
+            "isCorrect": false,
+            "wrongExplanation": "Opowiadanie z wielu perspektyw to narracja polifoniczna – narrator niewiarygodny to jeden głos, który mija się z prawdą."
+          },
+          {
+            "text": "Narrator przerywa fabułę komentarzami do czytelnika",
+            "isCorrect": false,
+            "wrongExplanation": "Zwracanie się do czytelnika to apostrofa lub metatekst – nie ma związku z wiarygodnością narracji."
+          },
+          {
+            "text": "Narrator używa wyłącznie czasu teraźniejszego",
+            "isCorrect": false,
+            "wrongExplanation": "Czas narracji to kwestia stylistyczna – niewiarygodność dotyczy zniekształcania faktów."
+          }
+        ],
+        "correctExplanation": "Narrator niewiarygodny to postać prowadząca narrację, której relacji nie można w pełni ufać – może kłamać, mieć ograniczoną wiedzę, być psychicznie niestabilna lub celowo manipulować czytelnikiem. Przykładem jest Humbert Humbert z „Lolity" Nabokova. Technika ta zmusza czytelnika do aktywnego odczytywania tekstu i szukania prawdy między wierszami."
+      },
+      {
+        "id": "polski-z-003",
+        "question": "Co to jest parataksa w składni?",
+        "options": [
+          {
+            "text": "Współrzędne łączenie zdań bez użycia spójników podrzędnych",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Budowanie zdań z wieloma zdaniami podrzędnymi",
+            "isCorrect": false,
+            "wrongExplanation": "Rozbudowane zdania podrzędne to hipotaksa – parataksa to ich przeciwieństwo: zdania współrzędne."
+          },
+          {
+            "text": "Stosowanie inwersji szyku zdania",
+            "isCorrect": false,
+            "wrongExplanation": "Inwersja to zmiana naturalnego szyku wyrazów – parataksa dotyczy relacji między zdaniami."
+          },
+          {
+            "text": "Używanie zdań wykrzyknikowych w tekście narracyjnym",
+            "isCorrect": false,
+            "wrongExplanation": "Zdania wykrzyknikowe to typ modalności – parataksa to sposób łączenia zdań składowych."
+          }
+        ],
+        "correctExplanation": "Parataksa to sposób budowania wypowiedzi polegający na zestawianiu zdań współrzędnych, bez wyraźnej hierarchii składniowej. Zdania są łączone spójnikami współrzędnymi (i, a, ale) lub bezspójnikowo. Styl parataktyczny daje wrażenie prostoty i dynamiki – jest charakterystyczny np. dla Hemingwaya czy Biblii."
+      },
+      {
+        "id": "polski-z-004",
+        "question": "Kim był Witold Gombrowicz w kontekście polskiej literatury?",
+        "options": [
+          {
+            "text": "Przedstawiciel pozytywizmu, autor powieści społecznych",
+            "isCorrect": false,
+            "wrongExplanation": "Pozytywizm to epoka Prusa i Sienkiewicza – Gombrowicz tworzył w XX w. i zrywał z konwencjami."
+          },
+          {
+            "text": "Awangardowy pisarz dekonstruujący formę, tożsamość i polskość",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Poeta Młodej Polski, twórca nastrojowej liryki",
+            "isCorrect": false,
+            "wrongExplanation": "Młoda Polska to Kasprowicz, Staff, Leśmian – Gombrowicz był prozaikiem i dramaturgiem XX w."
+          },
+          {
+            "text": "Kronikarz powstania warszawskiego",
+            "isCorrect": false,
+            "wrongExplanation": "Kroniki powstania tworzył np. Białoszewski – Gombrowicz emigrował przed wojną i pisał o formie i niedojrzałości."
+          }
+        ],
+        "correctExplanation": "Witold Gombrowicz to jeden z najważniejszych polskich pisarzy XX wieku, znany z radykalnego podejścia do literatury. W dziełach takich jak „Ferdydurke", „Trans-Atlantyk" i „Kosmos" dekonstruował konwencje społeczne, pojęcie formy i polskiej tożsamości narodowej. Jego twórczość wyprzedzała postmodernizm i miała ogromny wpływ na literaturę europejską."
+      },
+      {
+        "id": "polski-z-005",
+        "question": "Co to jest enjambement w poezji?",
+        "options": [
+          {
+            "text": "Przeniesienie części zdania do następnego wersu bez naturalnej pauzy",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Powtórzenie tego samego słowa na początku kolejnych wersów",
+            "isCorrect": false,
+            "wrongExplanation": "To anafora – enjambement dotyczy przerzutni składniowej między wersami."
+          },
+          {
+            "text": "Użycie rymu wewnętrznego w obrębie jednego wersu",
+            "isCorrect": false,
+            "wrongExplanation": "Rym wewnętrzny to rym w środku wersu – enjambement to przeniesienie zdania."
+          },
+          {
+            "text": "Celowe pominięcie wyrazu, który czytelnik domyśla się z kontekstu",
+            "isCorrect": false,
+            "wrongExplanation": "Pominięcie wyrazu to elipsa – enjambement to przerzutnia, czyli kontynuacja zdania w następnym wersie."
+          }
+        ],
+        "correctExplanation": "Enjambement (przerzutnia) to zabieg poetycki polegający na tym, że zdanie lub fraza nie kończy się wraz z wersem, lecz przechodzi do następnego. Tworzy to napięcie, dynamizuje rytm i zmusza czytelnika do czytania dalej. Jest szczególnie częsty w poezji współczesnej, gdzie rozbija tradycyjną harmonię wiersza."
+      }
+    ]
+  }
+}

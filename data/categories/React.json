@@ -1,0 +1,279 @@
+{
+  "category": "React",
+  "levels": {
+    "Podstawowy": [
+      {
+        "id": "react-p-001",
+        "question": "Czym jest JSX w React?",
+        "options": [
+          {
+            "text": "Rozszerzenie składni JavaScript umożliwiające pisanie HTML-a w kodzie JS",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Nowy język programowania stworzony przez Facebooka",
+            "isCorrect": false,
+            "wrongExplanation": "JSX nie jest osobnym językiem – to składnia kompilowana do zwykłego JavaScriptu."
+          },
+          {
+            "text": "Framework CSS do stylowania komponentów",
+            "isCorrect": false,
+            "wrongExplanation": "Frameworki CSS służą do stylowania – JSX odpowiada za strukturę UI."
+          },
+          {
+            "text": "System zarządzania bazą danych",
+            "isCorrect": false,
+            "wrongExplanation": "Systemy bazodanowe służą do przechowywania danych – nie mają związku z renderowaniem."
+          }
+        ],
+        "correctExplanation": "JSX to rozszerzenie składni JavaScript, które pozwala pisać strukturę UI w sposób przypominający HTML. Pod spodem JSX jest kompilowany do wywołań React.createElement(), dzięki czemu przeglądarka otrzymuje zwykły JavaScript."
+      },
+      {
+        "id": "react-p-002",
+        "question": "Co to jest hook useState w React?",
+        "options": [
+          {
+            "text": "Funkcja do wykonywania zapytań HTTP",
+            "isCorrect": false,
+            "wrongExplanation": "Do zapytań HTTP używa się fetch lub axios – useState nie komunikuje się z serwerem."
+          },
+          {
+            "text": "Hook umożliwiający dodanie stanu lokalnego do komponentu funkcyjnego",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Metoda cyklu życia komponentu klasowego",
+            "isCorrect": false,
+            "wrongExplanation": "Metody cyklu życia istnieją w klasach – useState to hook dla komponentów funkcyjnych."
+          },
+          {
+            "text": "Funkcja do routingu między stronami",
+            "isCorrect": false,
+            "wrongExplanation": "Routing obsługują React Router lub Next.js – useState zarządza stanem wewnątrz komponentu."
+          }
+        ],
+        "correctExplanation": "useState to wbudowany hook Reacta, który pozwala komponentom funkcyjnym przechowywać i aktualizować własny stan. Wywołujesz go tak: const [wartość, setWartość] = useState(początkowa). Kiedy wywołasz setter, React przerenderuje komponent."
+      },
+      {
+        "id": "react-p-003",
+        "question": "Jak przekazujemy dane z rodzica do dziecka w React?",
+        "options": [
+          {
+            "text": "Przez globalne zmienne JavaScript",
+            "isCorrect": false,
+            "wrongExplanation": "Globalne zmienne nie są reaktywne – React nie wie, kiedy się zmieniają."
+          },
+          {
+            "text": "Przez props (właściwości)",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Przez localStorage przeglądarki",
+            "isCorrect": false,
+            "wrongExplanation": "localStorage to trwały zapis danych w przeglądarce – nie jest częścią systemu renderowania Reacta."
+          },
+          {
+            "text": "Przez bezpośrednią modyfikację DOM",
+            "isCorrect": false,
+            "wrongExplanation": "Bezpośrednia manipulacja DOM omija wirtualny DOM Reacta i prowadzi do błędów."
+          }
+        ],
+        "correctExplanation": "W React dane płyną jednokierunkowo z góry na dół poprzez props. Rodzic przekazuje dane jako atrybuty JSX, a dziecko odbiera je jako obiekt props. Dzięki temu przepływ danych jest przewidywalny i łatwy do debugowania."
+      },
+      {
+        "id": "react-p-004",
+        "question": "Co zwraca komponent React?",
+        "options": [
+          {
+            "text": "Obiekt JSON",
+            "isCorrect": false,
+            "wrongExplanation": "JSON to format wymiany danych – komponent React zwraca opis interfejsu, nie dane JSON."
+          },
+          {
+            "text": "Elementy React (JSX) opisujące, co powinno pojawić się na ekranie",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Kod HTML jako string",
+            "isCorrect": false,
+            "wrongExplanation": "JSX przypomina HTML, ale jest kompilowany do obiektów JavaScript, nie stringów."
+          },
+          {
+            "text": "Zapytanie SQL do bazy danych",
+            "isCorrect": false,
+            "wrongExplanation": "Zapytania SQL służą do komunikacji z bazami danych – nie mają związku z UI."
+          }
+        ],
+        "correctExplanation": "Komponent React to funkcja zwracająca elementy React (JSX) opisujące strukturę UI. React bierze ten opis i tworzy lub aktualizuje DOM. Dlatego mówimy o „wirtualnym DOM" – React porównuje opisy i zmienia tylko to, co się zmieniło."
+      },
+      {
+        "id": "react-p-005",
+        "question": "Do czego służy hook useEffect w React?",
+        "options": [
+          {
+            "text": "Do definiowania stylów CSS",
+            "isCorrect": false,
+            "wrongExplanation": "Style definiuje się przez className, obiekty style lub CSS Modules – useEffect nie styluje."
+          },
+          {
+            "text": "Do wykonywania efektów ubocznych, takich jak pobieranie danych",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Do tworzenia nowych komponentów dynamicznie",
+            "isCorrect": false,
+            "wrongExplanation": "Komponenty tworzy się deklaratywnie w kodzie – useEffect reaguje na zmiany."
+          },
+          {
+            "text": "Do kompilowania kodu TypeScript",
+            "isCorrect": false,
+            "wrongExplanation": "Kompilacją TypeScript zajmuje się tsc lub bundlery – useEffect działa w runtime."
+          }
+        ],
+        "correctExplanation": "useEffect pozwala wykonywać efekty uboczne – operacje wykraczające poza renderowanie UI, jak pobieranie danych z API, ustawianie timerów czy subskrypcje zdarzeń. Przyjmuje funkcję i opcjonalną tablicę zależności – efekt uruchamia się po renderze i ponownie, gdy zmienią się zależności."
+      }
+    ],
+    "Zaawansowany": [
+      {
+        "id": "react-z-001",
+        "question": "Co to jest React.memo i kiedy go używamy?",
+        "options": [
+          {
+            "text": "Hook do zapamiętywania stanu między renderami",
+            "isCorrect": false,
+            "wrongExplanation": "Do zapamiętywania stanu służy useState lub useRef – React.memo optymalizuje renderowanie."
+          },
+          {
+            "text": "HOC zapobiegający ponownemu renderowaniu, gdy props się nie zmieniły",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Metoda do zapisywania komponentu w cache przeglądarki",
+            "isCorrect": false,
+            "wrongExplanation": "Cache przeglądarki dotyczy zasobów HTTP – React.memo działa na poziomie wirtualnego DOM."
+          },
+          {
+            "text": "Funkcja do serializacji komponentu do JSON",
+            "isCorrect": false,
+            "wrongExplanation": "Komponenty React to funkcje i nie mogą być bezpośrednio serializowane do JSON."
+          }
+        ],
+        "correctExplanation": "React.memo to Higher-Order Component, który zapobiega ponownemu renderowaniu, jeśli props się nie zmieniły (porównanie płytkie). Używamy go, gdy komponent renderuje się zbyt często z tymi samymi danymi. React.memo porównuje props płytko – dla obiektów sprawdza referencję, nie zawartość."
+      },
+      {
+        "id": "react-z-002",
+        "question": "Jaka jest różnica między useCallback a useMemo?",
+        "options": [
+          {
+            "text": "useCallback zapamiętuje funkcję, useMemo zapamiętuje wynik obliczenia",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "useCallback działa synchronicznie, useMemo asynchronicznie",
+            "isCorrect": false,
+            "wrongExplanation": "Oba hooki działają synchronicznie – różnica dotyczy tego, CO zapamiętują."
+          },
+          {
+            "text": "useCallback jest dla klas, useMemo dla funkcji",
+            "isCorrect": false,
+            "wrongExplanation": "Oba to hooki działające wyłącznie w komponentach funkcyjnych."
+          },
+          {
+            "text": "To aliasy tego samego hooka",
+            "isCorrect": false,
+            "wrongExplanation": "To odrębne hooki – useCallback zwraca funkcję, useMemo zwraca obliczoną wartość."
+          }
+        ],
+        "correctExplanation": "useCallback zapamiętuje samą funkcję, aby nie tworzyć nowej referencji przy każdym renderze – przydatne przy przekazywaniu callbacków jako props. useMemo zapamiętuje wynik obliczeń – przydatne przy kosztownych operacjach. Technicznie useCallback(fn, deps) to skrót dla useMemo(() => fn, deps)."
+      },
+      {
+        "id": "react-z-003",
+        "question": "Co to jest Concurrent Mode w React 18+?",
+        "options": [
+          {
+            "text": "Tryb, w którym React może przerywać i wznawiać renderowanie",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Tryb wielowątkowy uruchamiający React w Web Workerach",
+            "isCorrect": false,
+            "wrongExplanation": "React działa w głównym wątku – współbieżność to inteligentne planowanie pracy, nie wielowątkowość."
+          },
+          {
+            "text": "System automatycznego testowania komponentów",
+            "isCorrect": false,
+            "wrongExplanation": "Testowanie zapewniają Jest czy Vitest – współbieżność dotyczy renderowania."
+          },
+          {
+            "text": "Mechanizm synchronizacji stanu między zakładkami",
+            "isCorrect": false,
+            "wrongExplanation": "Synchronizacja między zakładkami wymaga BroadcastChannel – React działa w jednej zakładce."
+          }
+        ],
+        "correctExplanation": "Współbieżność w React 18+ pozwala przerywać długie renderowanie, obsłużyć pilniejsze aktualizacje (np. input), a potem wrócić do przerwanej pracy. Interfejs pozostaje responsywny nawet podczas ciężkich operacji. Hooki useTransition i useDeferredValue pozwalają oznaczać aktualizacje jako mniej pilne."
+      },
+      {
+        "id": "react-z-004",
+        "question": "Czym są Server Components w React?",
+        "options": [
+          {
+            "text": "Komponenty renderowane wyłącznie na serwerze, bez JS po stronie klienta",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Komponenty uruchamiane jako mikroserwisy REST",
+            "isCorrect": false,
+            "wrongExplanation": "Mikroserwisy to niezależne usługi sieciowe – Server Components to sposób renderowania UI."
+          },
+          {
+            "text": "Specjalny typ klasy zoptymalizowany pod SSR",
+            "isCorrect": false,
+            "wrongExplanation": "Server Components to nowa koncepcja niezależna od komponentów klasowych."
+          },
+          {
+            "text": "Komponenty automatycznie cachowane w CDN",
+            "isCorrect": false,
+            "wrongExplanation": "Cachowanie w CDN to osobna warstwa – Server Components dotyczą tego, gdzie komponent jest renderowany."
+          }
+        ],
+        "correctExplanation": "Server Components renderują się wyłącznie na serwerze – ich kod JavaScript nigdy nie trafia do przeglądarki, co zmniejsza bundle. Mogą bezpośrednio korzystać z bazy danych i sekretów. Są domyślne w Next.js App Router – jeśli potrzebujesz interaktywności, dodajesz 'use client'."
+      },
+      {
+        "id": "react-z-005",
+        "question": "Kiedy useReducer jest lepszy od useState?",
+        "options": [
+          {
+            "text": "Służy do redukcji rozmiaru bundla",
+            "isCorrect": false,
+            "wrongExplanation": "Redukcja bundla to zadanie bundlerów i tree-shaking – useReducer zarządza stanem."
+          },
+          {
+            "text": "Gdy mamy złożony stan z wieloma powiązanymi wartościami",
+            "isCorrect": true,
+            "wrongExplanation": ""
+          },
+          {
+            "text": "Jest szybszą wersją useState",
+            "isCorrect": false,
+            "wrongExplanation": "useReducer działa w tym samym wątku co useState – różnica to wzorzec, nie wydajność."
+          },
+          {
+            "text": "Automatycznie synchronizuje stan z bazą danych",
+            "isCorrect": false,
+            "wrongExplanation": "Synchronizacja z bazą wymaga API – useReducer działa lokalnie w komponencie."
+          }
+        ],
+        "correctExplanation": "useReducer to hook do zarządzania złożonym stanem, gdzie kolejna wartość zależy od poprzedniej lub mamy wiele powiązanych zmiennych. Definiujesz funkcję reducer przyjmującą stan i akcję, zwracającą nowy stan. Cała logika aktualizacji jest w jednym miejscu zamiast rozproszona po handlerach."
+      }
+    ]
+  }
+}

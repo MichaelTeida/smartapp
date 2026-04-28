@@ -1,0 +1,279 @@
+{
+    "category": "Geografia",
+    "levels": {
+        "Podstawowy": [
+            {
+                "id": "geo-p-001",
+                "question": "Jaka jest stolica Francji?",
+                "options": [
+                    {
+                        "text": "Paryż",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Lyon",
+                        "isCorrect": false,
+                        "wrongExplanation": "Lyon to drugie co do wielkości miasto Francji – stolica to Paryż."
+                    },
+                    {
+                        "text": "Marsylia",
+                        "isCorrect": false,
+                        "wrongExplanation": "Marsylia to największy port Francji – stolica to Paryż nad Sekwaną."
+                    },
+                    {
+                        "text": "Bruksela",
+                        "isCorrect": false,
+                        "wrongExplanation": "Bruksela to stolica Belgii (i siedziba UE) – stolica Francji to Paryż."
+                    }
+                ],
+                "correctExplanation": "Paryż jest stolicą Francji i największym miastem kraju z ok. 2,1 mln mieszkańców (aglomeracja ponad 12 mln). Leży nad rzeką Sekwaną. Jest światowym centrum kultury, mody i gastronomii, znany z Wieży Eiffla, Luwru i Łuku Triumfalnego."
+            },
+            {
+                "id": "geo-p-002",
+                "question": "Który ocean jest największy na Ziemi?",
+                "options": [
+                    {
+                        "text": "Ocean Atlantycki",
+                        "isCorrect": false,
+                        "wrongExplanation": "Atlantyk jest drugim co do wielkości – największy jest Pacyfik."
+                    },
+                    {
+                        "text": "Ocean Spokojny (Pacyfik)",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Ocean Indyjski",
+                        "isCorrect": false,
+                        "wrongExplanation": "Ocean Indyjski jest trzeci pod względem powierzchni – Pacyfik jest największy."
+                    },
+                    {
+                        "text": "Ocean Arktyczny",
+                        "isCorrect": false,
+                        "wrongExplanation": "Arktyczny to najmniejszy z oceanów – Pacyfik jest największy."
+                    }
+                ],
+                "correctExplanation": "Ocean Spokojny (Pacyfik) to największy i najgłębszy ocean na Ziemi, pokrywający ok. 165 mln km² – ponad 30% powierzchni planety. Rozciąga się od Azji i Australii na zachodzie po Ameryki na wschodzie. Zawiera najgłębsze miejsce na Ziemi – Rów Mariański (ok. 11 034 m głębokości)."
+            },
+            {
+                "id": "geo-p-003",
+                "question": "Ile kontynentów ma Ziemia?",
+                "options": [
+                    {
+                        "text": "5",
+                        "isCorrect": false,
+                        "wrongExplanation": "5 to liczba zamieszkanych kontynentów (bez Antarktydy) w niektórych modelach – standardowo wyróżnia się 7."
+                    },
+                    {
+                        "text": "6",
+                        "isCorrect": false,
+                        "wrongExplanation": "6 kontynentów to model łączący Europę i Azję w Eurazję – najpopularniejszy podział to 7."
+                    },
+                    {
+                        "text": "7",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "8",
+                        "isCorrect": false,
+                        "wrongExplanation": "Nie ma 8 kontynentów – standardowy podział wyróżnia 7 (choć niektórzy proponują Zealandię jako 8.)."
+                    }
+                ],
+                "correctExplanation": "Ziemia ma 7 kontynentów: Azję, Afrykę, Amerykę Północną, Amerykę Południową, Antarktydę, Europę i Australię (Oceanię). Azja jest największym kontynentem (ok. 44 mln km²), a Australia najmniejszym (ok. 8,5 mln km²). Warto wiedzieć, że w niektórych krajach stosuje się inne podziały (np. 6 czy 5 kontynentów)."
+            },
+            {
+                "id": "geo-p-004",
+                "question": "Która rzeka jest najdłuższa na świecie?",
+                "options": [
+                    {
+                        "text": "Amazonka",
+                        "isCorrect": false,
+                        "wrongExplanation": "Amazonka jest najobfitsza w wodę, ale według większości pomiarów Nil jest dłuższy o ok. 100 km."
+                    },
+                    {
+                        "text": "Nil",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Missisipi",
+                        "isCorrect": false,
+                        "wrongExplanation": "Missisipi to najdłuższa rzeka Ameryki Północnej – Nil w Afryce jest dłuższy."
+                    },
+                    {
+                        "text": "Jangcy",
+                        "isCorrect": false,
+                        "wrongExplanation": "Jangcy to najdłuższa rzeka Azji – Nil jest dłuższy o ponad 200 km."
+                    }
+                ],
+                "correctExplanation": "Nil jest tradycyjnie uznawany za najdłuższą rzekę świata – ma ok. 6 650 km długości. Przepływa przez 11 krajów Afryki, od Jeziora Wiktorii po Morze Śródziemne. Choć niektóre nowsze pomiary sugerują, że Amazonka może być dłuższa, Nil oficjalnie utrzymuje ten tytuł."
+            },
+            {
+                "id": "geo-p-005",
+                "question": "Co to jest równik?",
+                "options": [
+                    {
+                        "text": "Umowna linia dzieląca Ziemię na półkulę północną i południową",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Linia dzieląca Ziemię na półkulę wschodnią i zachodnią",
+                        "isCorrect": false,
+                        "wrongExplanation": "Podział na wschód/zachód to południk zerowy (Greenwich) – równik dzieli na północ/południe."
+                    },
+                    {
+                        "text": "Najwyższy punkt na powierzchni Ziemi",
+                        "isCorrect": false,
+                        "wrongExplanation": "Najwyższy punkt to Mount Everest – równik to linia na 0° szerokości geograficznej."
+                    },
+                    {
+                        "text": "Granica między atmosferą a kosmosem",
+                        "isCorrect": false,
+                        "wrongExplanation": "Granica kosmosu to linia Kármána (100 km) – równik to linia na powierzchni Ziemi."
+                    }
+                ],
+                "correctExplanation": "Równik to umowna linia biegnąca wokół Ziemi w równej odległości od obu biegunów, na 0° szerokości geograficznej. Ma ok. 40 075 km długości. Dzieli Ziemię na półkulę północną i południową. Kraje równikowe mają klimat tropikalny z wysokimi temperaturami i obfitymi opadami przez cały rok."
+            }
+        ],
+        "Zaawansowany": [
+            {
+                "id": "geo-z-001",
+                "question": "Co to jest tektonika płyt?",
+                "options": [
+                    {
+                        "text": "Teoria opisująca ruch wielkich płyt litosfery po astenosferze",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Proces erozji skał przez wiatr",
+                        "isCorrect": false,
+                        "wrongExplanation": "Erozja eoliczna to niszczenie skał przez wiatr – tektonika dotyczy ruchu płyt."
+                    },
+                    {
+                        "text": "Metoda przewidywania trzęsień ziemi",
+                        "isCorrect": false,
+                        "wrongExplanation": "Prognozowanie trzęsień to sejsmologia – tektonika wyjaśnia mechanizm ich powstawania."
+                    },
+                    {
+                        "text": "Rodzaj wulkanu podwodnego",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wulkany podwodne to efekt tektoniki – sama teoria opisuje ruch płyt litosfery."
+                    }
+                ],
+                "correctExplanation": "Tektonika płyt to teoria wyjaśniająca, że zewnętrzna warstwa Ziemi (litosfera) jest podzielona na kilkanaście wielkich płyt, które powoli poruszają się po plastycznej astenosferze. Ich zderzanie powoduje trzęsienia ziemi i wypiętrzanie gór, rozchodzenie – ryfty i nowe dno oceaniczne, a podsuwan – wulkanizm. To fundamentalna teoria nauk o Ziemi."
+            },
+            {
+                "id": "geo-z-002",
+                "question": "Co to jest efekt cieplarniany?",
+                "options": [
+                    {
+                        "text": "Zatrzymywanie ciepła w atmosferze przez gazy takie jak CO₂ i metan",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Wzrost temperatury spowodowany dziurą ozonową",
+                        "isCorrect": false,
+                        "wrongExplanation": "Dziura ozonowa wpuszcza UV – efekt cieplarniany to zatrzymywanie ciepła przez gazy."
+                    },
+                    {
+                        "text": "Ocieplanie miast przez beton i asfalt",
+                        "isCorrect": false,
+                        "wrongExplanation": "To miejska wyspa ciepła – efekt cieplarniany to zjawisko atmosferyczne globalne."
+                    },
+                    {
+                        "text": "Naturalne nagrzewanie oceanu przez prądy morskie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Prądy morskie transportują ciepło – efekt cieplarniany to absorpcja promieniowania."
+                    }
+                ],
+                "correctExplanation": "Efekt cieplarniany to naturalny proces, w którym gazy atmosferyczne (CO₂, metan, para wodna) zatrzymują część ciepła emitowanego przez Ziemię, utrzymując średnią temperaturę ok. 15°C. Bez niego byłoby -18°C. Problem pojawia się, gdy działalność człowieka zwiększa stężenie tych gazów, wzmacniając efekt i powodując globalne ocieplenie."
+            },
+            {
+                "id": "geo-z-003",
+                "question": "Co to jest izostazja?",
+                "options": [
+                    {
+                        "text": "Stan równowagi skorupy ziemskiej unoszącej się na gęstszym płaszczu",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Równomierne rozmieszczenie opadów na kuli ziemskiej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Rozmieszczenie opadów to klimatologia – izostazja dotyczy równowagi litosfery."
+                    },
+                    {
+                        "text": "Stała temperatura w głębi jaskiń",
+                        "isCorrect": false,
+                        "wrongExplanation": "Stała temperatura jaskiń to mikroklimat – izostazja to równowaga grawitacyjna skorupy."
+                    },
+                    {
+                        "text": "Proces tworzenia się lodowców",
+                        "isCorrect": false,
+                        "wrongExplanation": "Glacjacja to tworzenie lodowców – izostazja to podnoszenie się skorupy po ich stopieniu."
+                    }
+                ],
+                "correctExplanation": "Izostazja to stan równowagi grawitacyjnej, w którym lżejsza skorupa ziemska unosi się na gęstszym, plastycznym płaszczu – podobnie jak góra lodowa na wodzie. Gdy lądolód topnieje (jak w Skandynawii po epoce lodowej), odciążona skorupa powoli się podnosi. Proces ten trwa tysiące lat i można go obserwować np. w Finlandii, która podnosi się o ok. 1 cm rocznie."
+            },
+            {
+                "id": "geo-z-004",
+                "question": "Co to jest El Niño?",
+                "options": [
+                    {
+                        "text": "Cykliczne ocieplenie wód Pacyfiku wpływające na globalną pogodę",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Stały prąd morski wzdłuż wybrzeży Afryki",
+                        "isCorrect": false,
+                        "wrongExplanation": "Stałe prądy to np. Golfsztrom – El Niño to cykliczne zjawisko klimatyczne."
+                    },
+                    {
+                        "text": "Typ wulkanu występujący w Ameryce Południowej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Wulkany Andów to osobne zjawisko – El Niño to anomalia oceaniczno-atmosferyczna."
+                    },
+                    {
+                        "text": "Rodzaj monsunu w Azji Południowo-Wschodniej",
+                        "isCorrect": false,
+                        "wrongExplanation": "Monsun to sezonowy wiatr – El Niño to okresowe ocieplenie Pacyfiku."
+                    }
+                ],
+                "correctExplanation": "El Niño to cykliczne zjawisko klimatyczne polegające na anomalnym ociepleniu wód powierzchniowych wschodniego Pacyfiku, występujące co 2-7 lat. Wywołuje globalne skutki: susze w Australii i Azji, powodzie w Ameryce Południowej, zmiany w rybołówstwie. Wraz z La Niña (ochłodzenie) tworzy oscylację ENSO, jeden z najważniejszych czynników zmienności klimatu."
+            },
+            {
+                "id": "geo-z-005",
+                "question": "Co to jest strefa subdukcji?",
+                "options": [
+                    {
+                        "text": "Obszar, gdzie jedna płyta tektoniczna wsuwa się pod drugą",
+                        "isCorrect": true,
+                        "wrongExplanation": ""
+                    },
+                    {
+                        "text": "Pas pustynny wokół zwrotnika",
+                        "isCorrect": false,
+                        "wrongExplanation": "Pasy pustynne to strefy klimatyczne – subdukcja to proces tektoniczny."
+                    },
+                    {
+                        "text": "Region o najwyższych opadach na świecie",
+                        "isCorrect": false,
+                        "wrongExplanation": "Regiony obfitych opadów to strefy monsunowe – subdukcja to zderzenie płyt."
+                    },
+                    {
+                        "text": "Głęboka warstwa atmosfery powyżej stratosfery",
+                        "isCorrect": false,
+                        "wrongExplanation": "Warstwy atmosfery to troposfera, stratosfera itd. – subdukcja zachodzi w litosferze."
+                    }
+                ],
+                "correctExplanation": "Strefa subdukcji to obszar, gdzie jedna płyta tektoniczna zagłębia się pod drugą, schodząc do płaszcza Ziemi. Powoduje to silne trzęsienia ziemi, powstawanie rowów oceanicznych (jak Rów Mariański) i łańcuchów wulkanicznych. Pacyficzny Pierścień Ognia to ciąg stref subdukcji otaczający Ocean Spokojny, odpowiedzialny za 90% trzęsień ziemi na świecie."
+            }
+        ]
+    }
+}
