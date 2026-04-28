@@ -2,11 +2,16 @@ import { NextRequest } from 'next/server'
 import { auth } from '@clerk/nextjs/server'
 import dbConnect from '@/lib/mongodb'
 import Category from '@/models/Category'
+import { getCategories as getStaticCategories } from '@/lib/categories'
 
 export async function GET() {
-  await dbConnect()
-  const categories = await Category.find({}, { category: 1, _id: 0 })
-  return Response.json(categories.map(c => c.category))
+  try {
+    await dbConnect()
+    const dbCats = await Category.find({}, { _id: 0, __v: 0 }).lean()
+    if (dbCats.length > 0) return Response.json(dbCats)
+  } catch { /* DB unreachable — fallback */ }
+
+  return Response.json(getStaticCategories())
 }
 
 export async function POST(req: NextRequest) {

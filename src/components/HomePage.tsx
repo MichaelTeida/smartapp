@@ -4,9 +4,8 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { SignInButton, UserButton, useAuth } from '@clerk/nextjs'
 import { useQuizStore } from '@/store/quizStore'
-import { getCategories, getCategoryByName } from '@/lib/categories'
 import { useSyncUser } from '@/hooks/useSyncUser'
-import type { Difficulty, GameMode } from '@/types/quiz'
+import type { CategoryData, Difficulty, GameMode } from '@/types/quiz'
 import QuizEngine from '@/components/QuizEngine'
 
 const categoryIcons: Record<string, string> = {
@@ -33,9 +32,23 @@ export default function HomePage() {
   const { startQuiz, mistakes, questions, xp } = useQuizStore()
   const { isSignedIn } = useAuth()
   useSyncUser()
-  const categories = getCategories()
+  const [categories, setCategories] = useState<CategoryData[]>([])
+  const [loading, setLoading] = useState(true)
 
-  useEffect(() => { setMounted(true) }, [])
+  useEffect(() => {
+    setMounted(true)
+    fetch('/api/categories')
+      .then(r => r.json())
+      .then(data => {
+        setCategories(data)
+        setLoading(false)
+      })
+      .catch(() => setLoading(false))
+  }, [])
+
+  function getCategoryByName(name: string) {
+    return categories.find(c => c.category === name)
+  }
 
   function pickCategory(name: string) {
     setSelectedCat(name)
@@ -55,7 +68,8 @@ export default function HomePage() {
     let pool = cat.levels[selectedDiff]
 
     if (m === 'popraw-bledy') {
-      pool = pool.filter(q => mistakes.includes(q.id))
+      const allQuestions = [...cat.levels.Podstawowy, ...cat.levels.Zaawansowany]
+      pool = allQuestions.filter(q => mistakes.includes(q.id))
       if (pool.length === 0) {
         alert('Brak błędów do poprawienia w tej kategorii!')
         return
@@ -92,13 +106,13 @@ export default function HomePage() {
               </span>
             </h1>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 bg-zinc-800/60 px-3 py-1.5 rounded-full border border-zinc-700/50">
+          <div className="flex items-center gap-3">
+            <a href="/profile" className="flex items-center gap-2 bg-zinc-800/60 px-3 py-1.5 rounded-full border border-zinc-700/50 hover:bg-zinc-700/50 transition-colors">
               <span className="text-amber-400 text-sm">⚡</span>
               <span className="text-sm font-bold text-zinc-200">
                 {mounted ? xp : 0} XP
               </span>
-            </div>
+            </a>
 
             {isSignedIn ? (
               <UserButton />
@@ -127,8 +141,15 @@ export default function HomePage() {
                 <p className="text-sm text-zinc-500">Ucz się, ćwicz i zdobywaj XP</p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {categories.map((cat, i) => {
+              {loading ? (
+                <div className="flex justify-center py-12">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-500"></div>
+                </div>
+              ) : categories.length === 0 ? (
+                <div className="text-center py-12 text-zinc-500">Brak kategorii. Dodaj je w panelu admina.</div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {categories.map((cat, i) => {
                   const total = cat.levels.Podstawowy.length + cat.levels.Zaawansowany.length
                   return (
                     <motion.button
@@ -152,6 +173,7 @@ export default function HomePage() {
                   )
                 })}
               </div>
+              )}
             </motion.div>
           )}
 

@@ -76,15 +76,19 @@ export const useQuizStore = create<QuizState>()(
       },
 
       selectAnswer: (index) => {
-        const { answered, questions, currentIndex, answers, mistakes, xp } = get()
+        const { answered, questions, currentIndex, answers, mistakes, xp, mode } = get()
         if (answered) return
 
         const q = questions[currentIndex]
         const correct = q.options[index].isCorrect
         const newAnswers = [...answers, { questionId: q.id, selectedIndex: index, correct }]
-        const newMistakes = correct
-          ? mistakes
-          : mistakes.includes(q.id) ? mistakes : [...mistakes, q.id]
+
+        let newMistakes = mistakes
+        if (correct && mode === 'popraw-bledy') {
+          newMistakes = mistakes.filter(id => id !== q.id)
+        } else if (!correct && !mistakes.includes(q.id)) {
+          newMistakes = [...mistakes, q.id]
+        }
 
         set({
           selectedAnswer: index,
@@ -96,12 +100,17 @@ export const useQuizStore = create<QuizState>()(
       },
 
       nextQuestion: () => {
-        const { currentIndex, questions, mode } = get()
+        const { currentIndex, questions, mode, answers } = get()
         const next = currentIndex + 1
 
         if (mode === 'nieskonczonosc' && next >= questions.length) {
           set({ currentIndex: 0, questions: shuffle(questions), selectedAnswer: null, answered: false })
+          get().syncToServer()
           return
+        }
+
+        if (mode === 'nieskonczonosc' && answers.length % 5 === 0) {
+          get().syncToServer()
         }
 
         if (next >= questions.length) {
@@ -159,22 +168,26 @@ export const useQuizStore = create<QuizState>()(
           if (res.ok) {
             const user = await res.json()
             set({ xp: user.xp ?? 0, mistakes: user.mistakes ?? [] })
-          } else if (res.status === 404) {
-            await fetch('/api/user', { method: 'POST' })
           }
-        } catch { /* offline fallback to localStorage */ }
-        finally { set({ syncing: false }) }
+        } catch (e) {
+          console.warn('[Mindforge] sync from server failed:', e)
+        } finally {
+          set({ syncing: false })
+        }
       },
 
       syncToServer: async () => {
         try {
           const { xp, mistakes } = get()
-          await fetch('/api/user', {
+          const res = await fetch('/api/user', {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ xp, mistakes }),
           })
-        } catch { /* silent fail, localStorage has the data */ }
+          if (!res.ok) console.warn('[Mindforge] sync to server failed:', res.status)
+        } catch (e) {
+          console.warn('[Mindforge] sync to server error:', e)
+        }
       },
     }),
     {
