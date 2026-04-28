@@ -14,20 +14,20 @@
                     {
                         "text": "Aplikacja do przeglądania internetu",
                         "isCorrect": false,
-                        "wrongExplanation": "Przeglądarka (Chrome, Firefox) to aplikacja użytkowa – system operacyjny zarządza całym komputerem."
+                        "wrongExplanation": "Przeglądarka (Chrome, Firefox) to aplikacja użytkowa - system operacyjny zarządza całym komputerem."
                     },
                     {
                         "text": "Język programowania do tworzenia stron",
                         "isCorrect": false,
-                        "wrongExplanation": "Języki programowania (JS, Python) to narzędzia deweloperskie – OS to fundament działania komputera."
+                        "wrongExplanation": "Języki programowania (JS, Python) to narzędzia deweloperskie - OS to fundament działania komputera."
                     },
                     {
                         "text": "Fizyczny komponent komputera",
                         "isCorrect": false,
-                        "wrongExplanation": "Fizyczne komponenty to sprzęt (hardware) – system operacyjny to oprogramowanie (software)."
+                        "wrongExplanation": "Fizyczne komponenty to sprzęt (hardware) - system operacyjny to oprogramowanie (software)."
                     }
                 ],
-                "correctExplanation": "System operacyjny (OS) to oprogramowanie, które zarządza sprzętem komputera i udostępnia zasoby aplikacjom. Pełni rolę pośrednika między użytkownikiem a sprzętem. Przykłady to Windows, macOS, Linux – bez systemu operacyjnego komputer nie mógłby uruchamiać żadnych programów."
+                "correctExplanation": "System operacyjny (OS) to oprogramowanie, które zarządza sprzętem komputera i udostępnia zasoby aplikacjom. Pełni rolę pośrednika między użytkownikiem a sprzętem. Przykłady to Windows, macOS, Linux - bez systemu operacyjnego komputer nie mógłby uruchamiać żadnych programów."
             },
             {
                 "id": "it-p-002",
@@ -36,7 +36,7 @@
                     {
                         "text": "Pamięć stała przechowująca pliki na dysku",
                         "isCorrect": false,
-                        "wrongExplanation": "Pamięć stała to dysk HDD/SSD – RAM jest pamięcią ulotną, traconą po wyłączeniu."
+                        "wrongExplanation": "Pamięć stała to dysk HDD/SSD - RAM jest pamięcią ulotną, traconą po wyłączeniu."
                     },
                     {
                         "text": "Pamięć operacyjna do tymczasowego przechowywania danych podczas pracy",
@@ -46,15 +46,15 @@
                     {
                         "text": "Procesor graficzny do renderowania obrazu",
                         "isCorrect": false,
-                        "wrongExplanation": "Procesor graficzny to GPU – RAM to pamięć operacyjna."
+                        "wrongExplanation": "Procesor graficzny to GPU - RAM to pamięć operacyjna."
                     },
                     {
                         "text": "Port do podłączania urządzeń zewnętrznych",
                         "isCorrect": false,
-                        "wrongExplanation": "Porty (USB, HDMI) to złącza fizyczne – RAM to chip pamięci na płycie głównej."
+                        "wrongExplanation": "Porty (USB, HDMI) to złącza fizyczne - RAM to chip pamięci na płycie głównej."
                     }
                 ],
-                "correctExplanation": "RAM (Random Access Memory) to szybka pamięć operacyjna, w której komputer tymczasowo przechowuje dane potrzebne aktualnie uruchomionym programom. Jest wielokrotnie szybsza od dysku, ale ulotna – po wyłączeniu komputera jej zawartość znika. Im więcej RAM, tym więcej programów możesz uruchomić jednocześnie."
+                "correctExplanation": "RAM (Random Access Memory) to szybka pamięć operacyjna, w której komputer tymczasowo przechowuje dane potrzebne aktualnie uruchomionym programom. Jest wielokrotnie szybsza od dysku, ale ulotna - po wyłączeniu komputera jej zawartość znika. Im więcej RAM, tym więcej programów możesz uruchomić jednocześnie."
             },
             {
                 "id": "it-p-003",
@@ -68,47 +68,47 @@
                     {
                         "text": "Program do tworzenia kopii zapasowych",
                         "isCorrect": false,
-                        "wrongExplanation": "Kopie zapasowe tworzą programy typu backup – firewall filtruje ruch sieciowy."
+                        "wrongExplanation": "Kopie zapasowe tworzą programy typu backup - firewall filtruje ruch sieciowy."
                     },
                     {
                         "text": "Narzędzie do przyspieszania internetu",
                         "isCorrect": false,
-                        "wrongExplanation": "Przyspieszanie internetu to zadanie optymalizatorów – firewall chroni przed nieautoryzowanym dostępem."
+                        "wrongExplanation": "Przyspieszanie internetu to zadanie optymalizatorów - firewall chroni przed nieautoryzowanym dostępem."
                     },
                     {
                         "text": "Rodzaj złośliwego oprogramowania",
                         "isCorrect": false,
-                        "wrongExplanation": "Złośliwe oprogramowanie to malware – firewall jest narzędziem ochronnym."
+                        "wrongExplanation": "Złośliwe oprogramowanie to malware - firewall jest narzędziem ochronnym."
                     }
                 ],
-                "correctExplanation": "Firewall (zapora sieciowa) to system bezpieczeństwa kontrolujący ruch sieciowy na podstawie zdefiniowanych reguł. Działa jak bramkarz – decyduje, które połączenia mogą wejść do sieci, a które powinny być zablokowane. Może być sprzętowy (urządzenie) lub programowy (aplikacja w systemie)."
+                "correctExplanation": "Firewall (zapora sieciowa) to system bezpieczeństwa kontrolujący ruch sieciowy na podstawie zdefiniowanych reguł. Działa jak bramkarz - decyduje, które połączenia mogą wejść do sieci, a które powinny być zablokowane. Może być sprzętowy (urządzenie) lub programowy (aplikacja w systemie)."
             },
             {
                 "id": "it-p-004",
                 "question": "Co oznacza skrót IP w kontekście sieci?",
                 "options": [
                     {
-                        "text": "Internet Protocol – protokół komunikacji w sieci",
+                        "text": "Internet Protocol - protokół komunikacji w sieci",
                         "isCorrect": true,
                         "wrongExplanation": ""
                     },
                     {
-                        "text": "Internal Processing – wewnętrzne przetwarzanie danych",
+                        "text": "Internal Processing - wewnętrzne przetwarzanie danych",
                         "isCorrect": false,
-                        "wrongExplanation": "To wymyślony termin – IP oznacza Internet Protocol."
+                        "wrongExplanation": "To wymyślony termin - IP oznacza Internet Protocol."
                     },
                     {
-                        "text": "Input Port – port wejściowy urządzenia",
+                        "text": "Input Port - port wejściowy urządzenia",
                         "isCorrect": false,
-                        "wrongExplanation": "Porty wejściowe to pojęcie sprzętowe – IP to protokół sieciowy."
+                        "wrongExplanation": "Porty wejściowe to pojęcie sprzętowe - IP to protokół sieciowy."
                     },
                     {
-                        "text": "Information Privacy – ochrona prywatności informacji",
+                        "text": "Information Privacy - ochrona prywatności informacji",
                         "isCorrect": false,
-                        "wrongExplanation": "Ochrona prywatności to osobna dziedzina – IP to protokół adresowania w internecie."
+                        "wrongExplanation": "Ochrona prywatności to osobna dziedzina - IP to protokół adresowania w internecie."
                     }
                 ],
-                "correctExplanation": "IP (Internet Protocol) to podstawowy protokół komunikacyjny internetu, który definiuje sposób adresowania i przesyłania danych między urządzeniami. Każde urządzenie w sieci ma swój adres IP (np. 192.168.1.1), który działa jak adres pocztowy – pozwala jednoznacznie zidentyfikować nadawcę i odbiorcę danych."
+                "correctExplanation": "IP (Internet Protocol) to podstawowy protokół komunikacyjny internetu, który definiuje sposób adresowania i przesyłania danych między urządzeniami. Każde urządzenie w sieci ma swój adres IP (np. 192.168.1.1), który działa jak adres pocztowy - pozwala jednoznacznie zidentyfikować nadawcę i odbiorcę danych."
             },
             {
                 "id": "it-p-005",
@@ -122,17 +122,17 @@
                     {
                         "text": "Specjalny typ dysku twardego",
                         "isCorrect": false,
-                        "wrongExplanation": "Dyski twarde to lokalne urządzenia – chmura to zdalne usługi przez internet."
+                        "wrongExplanation": "Dyski twarde to lokalne urządzenia - chmura to zdalne usługi przez internet."
                     },
                     {
                         "text": "Oprogramowanie do prognozowania pogody",
                         "isCorrect": false,
-                        "wrongExplanation": "Prognozy pogody to osobna dziedzina – chmura to model dostarczania usług IT."
+                        "wrongExplanation": "Prognozy pogody to osobna dziedzina - chmura to model dostarczania usług IT."
                     },
                     {
                         "text": "Sieć lokalna w biurze",
                         "isCorrect": false,
-                        "wrongExplanation": "Sieć lokalna (LAN) łączy urządzenia w jednym miejscu – chmura działa globalnie przez internet."
+                        "wrongExplanation": "Sieć lokalna (LAN) łączy urządzenia w jednym miejscu - chmura działa globalnie przez internet."
                     }
                 ],
                 "correctExplanation": "Chmura obliczeniowa to model dostarczania zasobów IT (serwerów, baz danych, aplikacji) przez internet, bez konieczności posiadania własnej infrastruktury. Zamiast kupować serwer, wynajmujesz moc obliczeniową od dostawcy (AWS, Azure, Google Cloud). Płacisz za to, czego używasz, i możesz skalować zasoby w górę lub w dół w kilka minut."
@@ -151,17 +151,17 @@
                     {
                         "text": "Metoda kompresji plików do archiwum ZIP",
                         "isCorrect": false,
-                        "wrongExplanation": "Kompresja to redukcja rozmiaru plików – konteneryzacja izoluje środowisko uruchomieniowe."
+                        "wrongExplanation": "Kompresja to redukcja rozmiaru plików - konteneryzacja izoluje środowisko uruchomieniowe."
                     },
                     {
                         "text": "Sposób partycjonowania dysku twardego",
                         "isCorrect": false,
-                        "wrongExplanation": "Partycjonowanie dzieli dysk na sekcje – konteneryzacja dotyczy izolacji aplikacji."
+                        "wrongExplanation": "Partycjonowanie dzieli dysk na sekcje - konteneryzacja dotyczy izolacji aplikacji."
                     },
                     {
                         "text": "Protokół szyfrowania komunikacji sieciowej",
                         "isCorrect": false,
-                        "wrongExplanation": "Szyfrowanie to np. TLS/SSL – konteneryzacja to technologia wirtualizacji na poziomie OS."
+                        "wrongExplanation": "Szyfrowanie to np. TLS/SSL - konteneryzacja to technologia wirtualizacji na poziomie OS."
                     }
                 ],
                 "correctExplanation": "Konteneryzacja to technologia pozwalająca pakować aplikację wraz z jej zależnościami (bibliotekami, konfiguracją) w lekki, przenośny kontener. Docker jest najpopularniejszym narzędziem do tego celu. Kontenery są lżejsze od maszyn wirtualnych, bo współdzielą jądro systemu operacyjnego, a jednocześnie zapewniają izolację aplikacji."
@@ -178,17 +178,17 @@
                     {
                         "text": "Język programowania do tworzenia interfejsów",
                         "isCorrect": false,
-                        "wrongExplanation": "Języki UI to np. HTML/CSS – CI/CD to praktyka automatyzacji procesu dostarczania oprogramowania."
+                        "wrongExplanation": "Języki UI to np. HTML/CSS - CI/CD to praktyka automatyzacji procesu dostarczania oprogramowania."
                     },
                     {
                         "text": "Typ bazy danych zoptymalizowany pod odczyt",
                         "isCorrect": false,
-                        "wrongExplanation": "Bazy zoptymalizowane pod odczyt to np. Redis – CI/CD to pipeline automatyzacji."
+                        "wrongExplanation": "Bazy zoptymalizowane pod odczyt to np. Redis - CI/CD to pipeline automatyzacji."
                     },
                     {
                         "text": "Standard sieciowy do przesyłania wideo",
                         "isCorrect": false,
-                        "wrongExplanation": "Standardy wideo to np. HLS, DASH – CI/CD dotyczy procesu wytwarzania oprogramowania."
+                        "wrongExplanation": "Standardy wideo to np. HLS, DASH - CI/CD dotyczy procesu wytwarzania oprogramowania."
                     }
                 ],
                 "correctExplanation": "CI/CD (Continuous Integration / Continuous Delivery) to praktyka automatyzacji procesu wytwarzania oprogramowania. CI oznacza, że każda zmiana w kodzie jest automatycznie budowana i testowana. CD oznacza, że zmiany są automatycznie wdrażane na środowisko produkcyjne. Narzędzia takie jak GitHub Actions, Jenkins czy GitLab CI umożliwiają konfigurację takich pipeline'ów."
@@ -205,20 +205,20 @@
                     {
                         "text": "Narzędzie do monitorowania zużycia CPU",
                         "isCorrect": false,
-                        "wrongExplanation": "Monitoring CPU to np. top/htop – load balancer rozdziela ruch między serwery."
+                        "wrongExplanation": "Monitoring CPU to np. top/htop - load balancer rozdziela ruch między serwery."
                     },
                     {
                         "text": "Algorytm kompresji danych",
                         "isCorrect": false,
-                        "wrongExplanation": "Algorytmy kompresji to np. gzip – load balancer zarządza ruchem sieciowym."
+                        "wrongExplanation": "Algorytmy kompresji to np. gzip - load balancer zarządza ruchem sieciowym."
                     },
                     {
                         "text": "Protokół autentykacji użytkowników",
                         "isCorrect": false,
-                        "wrongExplanation": "Autentykacja to np. OAuth – load balancer równoważy obciążenie serwerów."
+                        "wrongExplanation": "Autentykacja to np. OAuth - load balancer równoważy obciążenie serwerów."
                     }
                 ],
-                "correctExplanation": "Load balancer to system rozdzielający przychodzący ruch sieciowy między wiele serwerów, aby żaden z nich nie został przeciążony. Działa jak dystrybutor – gdy przychodzi zapytanie, kieruje je do serwera z najmniejszym obciążeniem. Dzięki temu aplikacja może obsłużyć więcej użytkowników i jest odporna na awarię pojedynczego serwera."
+                "correctExplanation": "Load balancer to system rozdzielający przychodzący ruch sieciowy między wiele serwerów, aby żaden z nich nie został przeciążony. Działa jak dystrybutor - gdy przychodzi zapytanie, kieruje je do serwera z najmniejszym obciążeniem. Dzięki temu aplikacja może obsłużyć więcej użytkowników i jest odporna na awarię pojedynczego serwera."
             },
             {
                 "id": "it-z-004",
@@ -232,20 +232,20 @@
                     {
                         "text": "Protokół do przesyłania plików",
                         "isCorrect": false,
-                        "wrongExplanation": "Przesyłanie plików to FTP/SFTP – DNS tłumaczy nazwy na adresy IP."
+                        "wrongExplanation": "Przesyłanie plików to FTP/SFTP - DNS tłumaczy nazwy na adresy IP."
                     },
                     {
                         "text": "Typ szyfrowania danych",
                         "isCorrect": false,
-                        "wrongExplanation": "Szyfrowanie to np. AES, RSA – DNS to system nazewnictwa domen."
+                        "wrongExplanation": "Szyfrowanie to np. AES, RSA - DNS to system nazewnictwa domen."
                     },
                     {
                         "text": "Narzędzie do tworzenia kopii zapasowych",
                         "isCorrect": false,
-                        "wrongExplanation": "Backup to osobna kategoria narzędzi – DNS odpowiada za rozwiązywanie nazw."
+                        "wrongExplanation": "Backup to osobna kategoria narzędzi - DNS odpowiada za rozwiązywanie nazw."
                     }
                 ],
-                "correctExplanation": "DNS (Domain Name System) to system zamieniający czytelne dla ludzi nazwy domen (np. google.com) na numeryczne adresy IP (np. 142.250.74.46), które komputery wykorzystują do komunikacji. Działa jak książka telefoniczna internetu – wpisujesz nazwę strony, a DNS znajduje odpowiedni adres serwera."
+                "correctExplanation": "DNS (Domain Name System) to system zamieniający czytelne dla ludzi nazwy domen (np. google.com) na numeryczne adresy IP (np. 142.250.74.46), które komputery wykorzystują do komunikacji. Działa jak książka telefoniczna internetu - wpisujesz nazwę strony, a DNS znajduje odpowiedni adres serwera."
             },
             {
                 "id": "it-z-005",
@@ -264,12 +264,12 @@
                     {
                         "text": "Lekka baza danych do małych projektów",
                         "isCorrect": false,
-                        "wrongExplanation": "Lekkie bazy to np. SQLite – mikroserwis to sposób budowania aplikacji."
+                        "wrongExplanation": "Lekkie bazy to np. SQLite - mikroserwis to sposób budowania aplikacji."
                     },
                     {
                         "text": "Skrócona wersja API z ograniczonymi endpointami",
                         "isCorrect": false,
-                        "wrongExplanation": "Ograniczone API to kwestia projektu – mikroserwis to niezależna jednostka funkcjonalna."
+                        "wrongExplanation": "Ograniczone API to kwestia projektu - mikroserwis to niezależna jednostka funkcjonalna."
                     }
                 ],
                 "correctExplanation": "Mikroserwis to wzorzec architektoniczny, w którym aplikacja jest podzielona na małe, niezależne usługi, z których każda odpowiada za jedną funkcję biznesową. Każdy mikroserwis może być rozwijany, wdrażany i skalowany niezależnie. Komunikują się między sobą przez API. Jest to przeciwieństwo monolitu, gdzie cały kod jest w jednej aplikacji."

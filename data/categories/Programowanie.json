@@ -14,17 +14,17 @@
           {
             "text": "Polecenie do wyświetlania tekstu na ekranie",
             "isCorrect": false,
-            "wrongExplanation": "Wyświetlanie tekstu to operacja wyjścia (np. console.log) – zmienna przechowuje dane."
+            "wrongExplanation": "Wyświetlanie tekstu to operacja wyjścia (np. console.log) - zmienna przechowuje dane."
           },
           {
             "text": "Rodzaj pętli iteracyjnej",
             "isCorrect": false,
-            "wrongExplanation": "Pętle (for, while) powtarzają instrukcje – zmienna to kontener na wartość."
+            "wrongExplanation": "Pętle (for, while) powtarzają instrukcje - zmienna to kontener na wartość."
           },
           {
             "text": "Typ pliku wykonywalnego",
             "isCorrect": false,
-            "wrongExplanation": "Pliki wykonywalne (.exe) to skompilowane programy – zmienna to koncept w kodzie źródłowym."
+            "wrongExplanation": "Pliki wykonywalne (.exe) to skompilowane programy - zmienna to koncept w kodzie źródłowym."
           }
         ],
         "correctExplanation": "Zmienna to nazwane miejsce w pamięci komputera, w którym możesz przechowywać wartość (liczbę, tekst, obiekt itd.). Możesz ją odczytywać i zmieniać w trakcie działania programu. Nazwa zmiennej powinna jasno opisywać, co przechowuje, np. 'wiek', 'imie', 'suma'."
@@ -36,7 +36,7 @@
           {
             "text": "Instrukcja warunkowa sprawdzająca jeden warunek",
             "isCorrect": false,
-            "wrongExplanation": "Instrukcje warunkowe (if/else) sprawdzają warunek raz – pętla powtarza blok wielokrotnie."
+            "wrongExplanation": "Instrukcje warunkowe (if/else) sprawdzają warunek raz - pętla powtarza blok wielokrotnie."
           },
           {
             "text": "Konstrukcja pozwalająca powtarzać blok kodu wielokrotnie",
@@ -46,12 +46,12 @@
           {
             "text": "Sposób definiowania nowych typów danych",
             "isCorrect": false,
-            "wrongExplanation": "Definiowanie typów to np. class lub interface – pętla to mechanizm powtarzania."
+            "wrongExplanation": "Definiowanie typów to np. class lub interface - pętla to mechanizm powtarzania."
           },
           {
             "text": "Metoda łączenia dwóch plików w jeden",
             "isCorrect": false,
-            "wrongExplanation": "Łączenie plików to operacja systemu plików – pętla to struktura kontroli przepływu programu."
+            "wrongExplanation": "Łączenie plików to operacja systemu plików - pętla to struktura kontroli przepływu programu."
           }
         ],
         "correctExplanation": "Pętla to struktura kontroli przepływu, która pozwala wykonywać ten sam blok kodu wielokrotnie, dopóki spełniony jest określony warunek. Najczęściej spotykane pętle to for (gdy znasz liczbę iteracji) i while (gdy powtarzasz do spełnienia warunku). Bez pętli musielibyśmy kopiować ten sam kod wiele razy."
@@ -68,17 +68,17 @@
           {
             "text": "Plik konfiguracyjny aplikacji",
             "isCorrect": false,
-            "wrongExplanation": "Pliki konfiguracyjne (np. .env, .json) przechowują ustawienia – funkcja to fragment kodu."
+            "wrongExplanation": "Pliki konfiguracyjne (np. .env, .json) przechowują ustawienia - funkcja to fragment kodu."
           },
           {
             "text": "Połączenie z bazą danych",
             "isCorrect": false,
-            "wrongExplanation": "Połączenie z bazą to operacja sieciowa – funkcja to sposób organizacji kodu."
+            "wrongExplanation": "Połączenie z bazą to operacja sieciowa - funkcja to sposób organizacji kodu."
           },
           {
             "text": "Rodzaj komentarza w kodzie",
             "isCorrect": false,
-            "wrongExplanation": "Komentarze to notatki ignorowane przez kompilator – funkcja jest wykonywana."
+            "wrongExplanation": "Komentarze to notatki ignorowane przez kompilator - funkcja jest wykonywana."
           }
         ],
         "correctExplanation": "Funkcja to wydzielony blok kodu, który wykonuje konkretne zadanie i można go wywoływać wielokrotnie. Może przyjmować dane wejściowe (parametry) i zwracać wynik. Funkcje pozwalają unikać powtarzania kodu i dzielić program na logiczne, łatwe do zrozumienia części."
@@ -95,20 +95,20 @@
           {
             "text": "Automated Program Installation",
             "isCorrect": false,
-            "wrongExplanation": "To wymyślony termin – API oznacza Application Programming Interface."
+            "wrongExplanation": "To wymyślony termin - API oznacza Application Programming Interface."
           },
           {
             "text": "Advanced Protocol Integration",
             "isCorrect": false,
-            "wrongExplanation": "To wymyślony termin – API to interfejs programistyczny aplikacji."
+            "wrongExplanation": "To wymyślony termin - API to interfejs programistyczny aplikacji."
           },
           {
             "text": "Application Process Identifier",
             "isCorrect": false,
-            "wrongExplanation": "Identyfikator procesu to PID – API to interfejs umożliwiający komunikację między programami."
+            "wrongExplanation": "Identyfikator procesu to PID - API to interfejs umożliwiający komunikację między programami."
           }
         ],
-        "correctExplanation": "API (Application Programming Interface) to zestaw reguł i narzędzi, które umożliwiają różnym programom komunikację między sobą. Możesz myśleć o API jak o kelnerce w restauracji – ty (program) składasz zamówienie, kelnerka (API) przekazuje je do kuchni (serwer) i przynosi odpowiedź. API definiuje, jakie zapytania możesz wysłać i jakie odpowiedzi otrzymasz."
+        "correctExplanation": "API (Application Programming Interface) to zestaw reguł i narzędzi, które umożliwiają różnym programom komunikację między sobą. Możesz myśleć o API jak o kelnerce w restauracji - ty (program) składasz zamówienie, kelnerka (API) przekazuje je do kuchni (serwer) i przynosi odpowiedź. API definiuje, jakie zapytania możesz wysłać i jakie odpowiedzi otrzymasz."
       },
       {
         "id": "prog-p-005",
@@ -122,20 +122,20 @@
           {
             "text": "Typ danych przechowujący tylko jedną wartość",
             "isCorrect": false,
-            "wrongExplanation": "Pojedynczą wartość przechowuje zmienna prosta – tablica trzyma wiele wartości."
+            "wrongExplanation": "Pojedynczą wartość przechowuje zmienna prosta - tablica trzyma wiele wartości."
           },
           {
             "text": "Narzędzie do debugowania kodu",
             "isCorrect": false,
-            "wrongExplanation": "Debugowanie to szukanie błędów – tablica to sposób organizacji wielu wartości."
+            "wrongExplanation": "Debugowanie to szukanie błędów - tablica to sposób organizacji wielu wartości."
           },
           {
             "text": "Polecenie do usuwania plików",
             "isCorrect": false,
-            "wrongExplanation": "Usuwanie plików to operacja systemowa – tablica to struktura danych."
+            "wrongExplanation": "Usuwanie plików to operacja systemowa - tablica to struktura danych."
           }
         ],
-        "correctExplanation": "Tablica (array) to struktura danych, która przechowuje uporządkowaną listę elementów pod jedną nazwą. Każdy element ma swój indeks (pozycję), zaczynając od 0. Na przykład: const owoce = ['jabłko', 'banan', 'gruszka'] – tutaj owoce[0] to 'jabłko'. Tablice pozwalają efektywnie pracować z kolekcjami danych."
+        "correctExplanation": "Tablica (array) to struktura danych, która przechowuje uporządkowaną listę elementów pod jedną nazwą. Każdy element ma swój indeks (pozycję), zaczynając od 0. Na przykład: const owoce = ['jabłko', 'banan', 'gruszka'] - tutaj owoce[0] to 'jabłko'. Tablice pozwalają efektywnie pracować z kolekcjami danych."
       }
     ],
     "Zaawansowany": [
@@ -144,24 +144,24 @@
         "question": "Co to jest złożoność obliczeniowa O(n log n)?",
         "options": [
           {
-            "text": "Czas rośnie liniowo pomnożony przez logarytm – typowy dla wydajnych algorytmów sortowania",
+            "text": "Czas rośnie liniowo pomnożony przez logarytm - typowy dla wydajnych algorytmów sortowania",
             "isCorrect": true,
             "wrongExplanation": ""
           },
           {
             "text": "Czas rośnie wykładniczo z każdym elementem",
             "isCorrect": false,
-            "wrongExplanation": "Złożoność wykładnicza to O(2^n) – O(n log n) jest znacznie szybsze."
+            "wrongExplanation": "Złożoność wykładnicza to O(2^n) - O(n log n) jest znacznie szybsze."
           },
           {
             "text": "Czas jest stały niezależnie od rozmiaru danych",
             "isCorrect": false,
-            "wrongExplanation": "Stały czas to O(1) – O(n log n) rośnie z rozmiarem danych."
+            "wrongExplanation": "Stały czas to O(1) - O(n log n) rośnie z rozmiarem danych."
           },
           {
             "text": "Czas rośnie kwadratowo",
             "isCorrect": false,
-            "wrongExplanation": "Złożoność kwadratowa to O(n²) – O(n log n) jest szybsze dla dużych zbiorów."
+            "wrongExplanation": "Złożoność kwadratowa to O(n²) - O(n log n) jest szybsze dla dużych zbiorów."
           }
         ],
         "correctExplanation": "O(n log n) to złożoność obliczeniowa, w której czas wykonania rośnie proporcjonalnie do n pomnożonego przez logarytm z n. Jest to typowa złożoność wydajnych algorytmów sortowania jak Merge Sort czy Quick Sort. Dla 1000 elementów to ok. 10 000 operacji, a nie 1 000 000 jak w O(n²)."
@@ -178,17 +178,17 @@
           {
             "text": "Wzorzec tworzący wiele kopii obiektu jednocześnie",
             "isCorrect": false,
-            "wrongExplanation": "Tworzenie wielu kopii to wzorzec Prototype – Singleton ogranicza do jednej instancji."
+            "wrongExplanation": "Tworzenie wielu kopii to wzorzec Prototype - Singleton ogranicza do jednej instancji."
           },
           {
             "text": "Wzorzec organizujący kod w moduły",
             "isCorrect": false,
-            "wrongExplanation": "Modularyzacja to wzorzec Module – Singleton kontroluje liczbę instancji."
+            "wrongExplanation": "Modularyzacja to wzorzec Module - Singleton kontroluje liczbę instancji."
           },
           {
             "text": "Wzorzec obsługi zdarzeń asynchronicznych",
             "isCorrect": false,
-            "wrongExplanation": "Obsługa zdarzeń to wzorzec Observer – Singleton dotyczy tworzenia obiektów."
+            "wrongExplanation": "Obsługa zdarzeń to wzorzec Observer - Singleton dotyczy tworzenia obiektów."
           }
         ],
         "correctExplanation": "Singleton to kreacyjny wzorzec projektowy, który zapewnia, że dana klasa ma dokładnie jedną instancję i udostępnia do niej globalny punkt dostępu. Przydaje się np. do zarządzania połączeniem z bazą danych czy konfiguracją aplikacji. Warto jednak stosować go ostrożnie, bo utrudnia testowanie i wprowadza globalny stan."
@@ -205,17 +205,17 @@
           {
             "text": "Technika łączenia wielu funkcji w łańcuch",
             "isCorrect": false,
-            "wrongExplanation": "Łączenie funkcji to chaining – rekurencja to samowywołanie."
+            "wrongExplanation": "Łączenie funkcji to chaining - rekurencja to samowywołanie."
           },
           {
             "text": "Sposób iteracji po kolekcji od końca",
             "isCorrect": false,
-            "wrongExplanation": "Iteracja od końca to reverse iteration – rekurencja to wywołanie siebie samego."
+            "wrongExplanation": "Iteracja od końca to reverse iteration - rekurencja to wywołanie siebie samego."
           },
           {
             "text": "Proces kompilacji kodu do formatu binarnego",
             "isCorrect": false,
-            "wrongExplanation": "Kompilacja to zamiana kodu na maszynowy – rekurencja to technika programistyczna."
+            "wrongExplanation": "Kompilacja to zamiana kodu na maszynowy - rekurencja to technika programistyczna."
           }
         ],
         "correctExplanation": "Rekurencja to technika, w której funkcja wywołuje samą siebie z mniejszym lub prostszym wariantem problemu. Każda rekurencja potrzebuje warunku bazowego (stopu), który kończy łańcuch wywołań. Klasyczny przykład to silnia: factorial(n) = n * factorial(n-1), z warunkiem bazowym factorial(0) = 1."
@@ -232,17 +232,17 @@
           {
             "text": "Nazwa frameworka do testowania jednostkowego",
             "isCorrect": false,
-            "wrongExplanation": "Frameworki testowe to np. Jest, JUnit – SOLID to zbiór zasad projektowania."
+            "wrongExplanation": "Frameworki testowe to np. Jest, JUnit - SOLID to zbiór zasad projektowania."
           },
           {
             "text": "Typ bazy danych NoSQL",
             "isCorrect": false,
-            "wrongExplanation": "Bazy NoSQL to np. MongoDB – SOLID to zasady pisania czystego kodu."
+            "wrongExplanation": "Bazy NoSQL to np. MongoDB - SOLID to zasady pisania czystego kodu."
           },
           {
             "text": "Protokół komunikacji sieciowej",
             "isCorrect": false,
-            "wrongExplanation": "Protokoły sieciowe to np. HTTP, TCP – SOLID dotyczy architektury kodu."
+            "wrongExplanation": "Protokoły sieciowe to np. HTTP, TCP - SOLID dotyczy architektury kodu."
           }
         ],
         "correctExplanation": "SOLID to akronim pięciu zasad projektowania obiektowego: Single Responsibility (jedna odpowiedzialność), Open/Closed (otwarty na rozszerzenia, zamknięty na modyfikacje), Liskov Substitution (zastępowalność), Interface Segregation (rozdzielanie interfejsów), Dependency Inversion (odwrócenie zależności). Stosowanie tych zasad prowadzi do kodu łatwego w utrzymaniu i rozszerzaniu."
@@ -259,17 +259,17 @@
           {
             "text": "Proces usuwania niepotrzebnych plików z dysku",
             "isCorrect": false,
-            "wrongExplanation": "Usuwanie plików to operacja systemu – garbage collection dotyczy pamięci RAM programu."
+            "wrongExplanation": "Usuwanie plików to operacja systemu - garbage collection dotyczy pamięci RAM programu."
           },
           {
             "text": "Technika kompresji danych w bazie",
             "isCorrect": false,
-            "wrongExplanation": "Kompresja danych to redukcja rozmiaru – GC zwalnia pamięć po nieużywanych obiektach."
+            "wrongExplanation": "Kompresja danych to redukcja rozmiaru - GC zwalnia pamięć po nieużywanych obiektach."
           },
           {
             "text": "Metoda logowania błędów aplikacji",
             "isCorrect": false,
-            "wrongExplanation": "Logowanie błędów to zapis informacji diagnostycznych – GC zarządza pamięcią."
+            "wrongExplanation": "Logowanie błędów to zapis informacji diagnostycznych - GC zarządza pamięcią."
           }
         ],
         "correctExplanation": "Garbage collection (odśmiecanie) to automatyczny mechanizm zarządzania pamięcią, który identyfikuje obiekty, do których program nie ma już referencji, i zwalnia zajmowaną przez nie pamięć. Występuje w językach jak JavaScript, Java, C#, Python. Dzięki temu programista nie musi ręcznie alokować i zwalniać pamięci, co zmniejsza ryzyko wycieków pamięci."
