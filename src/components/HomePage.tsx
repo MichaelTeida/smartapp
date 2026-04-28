@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import { useQuizStore } from '@/store/quizStore'
 import { getCategories, getCategoryByName } from '@/lib/categories'
 import type { Difficulty, GameMode } from '@/types/quiz'
@@ -85,12 +86,24 @@ export default function HomePage() {
               </span>
             </h1>
           </div>
-          <div className="flex items-center gap-2 bg-zinc-800/60 px-3 py-1.5 rounded-full border border-zinc-700/50">
-            <span className="text-amber-400 text-sm">⚡</span>
-            <span className="text-sm font-bold text-zinc-200">
-              {useQuizStore.getState().xp} XP
-            </span>
-          </div>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 bg-zinc-800/60 px-3 py-1.5 rounded-full border border-zinc-700/50">
+              <span className="text-amber-400 text-sm">⚡</span>
+              <span className="text-sm font-bold text-zinc-200">
+                {useQuizStore.getState().xp} XP
+              </span>
+            </div>
+            
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="text-sm font-bold bg-emerald-500/10 text-emerald-400 px-4 py-1.5 rounded-full border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors">
+                  Zaloguj
+                </button>
+              </SignInButton>
+            </SignedOut>
         </div>
       </header>
 

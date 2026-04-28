@@ -43,3 +43,6 @@ next-env.d.ts
 # ai
 CLAUDE.md
 AGENTS.md
+
+# clerk configuration (can include secrets)
+/.clerk/
