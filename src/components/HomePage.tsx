@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { SignInButton, UserButton, useAuth } from '@clerk/nextjs'
+import { UserButton } from '@clerk/nextjs'
 import { useQuizStore } from '@/store/quizStore'
 import { useSyncUser } from '@/hooks/useSyncUser'
 import type { CategoryData, Difficulty, GameMode } from '@/types/quiz'
@@ -30,7 +30,6 @@ export default function HomePage() {
   const [mounted, setMounted] = useState(false)
 
   const { startQuiz, mistakes, questions, xp } = useQuizStore()
-  const { isSignedIn } = useAuth()
   useSyncUser()
   const [categories, setCategories] = useState<CategoryData[]>([])
   const [loading, setLoading] = useState(true)
@@ -113,16 +112,7 @@ export default function HomePage() {
                 {mounted ? xp : 0} XP
               </span>
             </a>
-
-            {isSignedIn ? (
-              <UserButton />
-            ) : (
-              <SignInButton mode="modal">
-                <button className="text-sm font-bold bg-emerald-500/10 text-emerald-400 px-4 py-1.5 rounded-full border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors">
-                  Zaloguj
-                </button>
-              </SignInButton>
-            )}
+            <UserButton />
           </div>
         </div>
       </header>
