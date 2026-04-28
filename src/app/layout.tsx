@@ -1,21 +1,16 @@
 import type { Metadata } from "next"
 import { ClerkProvider } from "@clerk/nextjs"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Outfit } from "next/font/google"
 import "./globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
   subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-outfit",
 })
 
 export const metadata: Metadata = {
-  title: "Mindforge - Ucz się grając",
-  description: "Grywalizacyjna aplikacja quizowa inspirowana Duolingo. Ucz się programowania, IT, języka polskiego i więcej.",
+  title: "Mindforge - Elitarna Kuźnia Wiedzy",
+  description: "Grywalizacyjna aplikacja quizowa dla IT i nie tylko. Ucz się skuteczniej.",
   manifest: "/manifest.json",
 }
 
@@ -26,8 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="pl" className={`${geistSans.variable} ${geistMono.variable}`}>
-        <body>
+      <html lang="pl" className={`${outfit.variable} font-sans`}>
+        <body suppressHydrationWarning className="bg-[#09090b] text-zinc-50 min-h-[100dvh] antialiased">
           {children}
           <script
             dangerouslySetInnerHTML={{
