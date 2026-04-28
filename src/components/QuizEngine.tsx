@@ -117,10 +117,10 @@ export default function QuizEngine() {
                     className={`flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border-2 text-left transition-all duration-200 cursor-pointer disabled:cursor-default min-h-[3rem] ${style}`}
                   >
                     <span className={`shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-xs sm:text-sm font-bold ${answered && i === correctIdx
-                        ? 'bg-emerald-500 text-white'
-                        : answered && i === selectedAnswer && !isCorrect
-                          ? 'bg-red-500 text-white'
-                          : 'bg-zinc-700/60 text-zinc-300'
+                      ? 'bg-emerald-500 text-white'
+                      : answered && i === selectedAnswer && !isCorrect
+                        ? 'bg-red-500 text-white'
+                        : 'bg-zinc-700/60 text-zinc-300'
                       }`}>
                       <span className="opacity-50 text-[10px] mr-0.5">{keys[i]}</span>
                       {labels[i]}
@@ -142,8 +142,8 @@ export default function QuizEngine() {
             exit={{ y: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             className={`border-t-2 ${isCorrect
-                ? 'bg-emerald-950/80 border-emerald-500/40'
-                : 'bg-red-950/80 border-red-500/40'
+              ? 'bg-emerald-950/80 border-emerald-500/40'
+              : 'bg-red-950/80 border-red-500/40'
               }`}
           >
             <div className="max-w-2xl mx-auto px-4 sm:px-8 py-4 sm:py-5">
@@ -186,8 +186,8 @@ export default function QuizEngine() {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className={`px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-bold text-sm tracking-wide transition-all ${isCorrect
-                      ? 'bg-emerald-500 hover:bg-emerald-400 text-white shadow-lg shadow-emerald-500/25'
-                      : 'bg-red-500 hover:bg-red-400 text-white shadow-lg shadow-red-500/25'
+                    ? 'bg-emerald-500 hover:bg-emerald-400 text-white shadow-lg shadow-emerald-500/25'
+                    : 'bg-red-500 hover:bg-red-400 text-white shadow-lg shadow-red-500/25'
                     }`}
                 >
                   {mode === 'nieskonczonosc' || currentIndex < questions.length - 1

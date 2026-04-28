@@ -1,9 +1,14 @@
-import { SignUp } from '@clerk/nextjs'
+import { SignUp } from "@clerk/nextjs";
 
-export default function SignUpPage() {
+export default function Page() {
   return (
-    <div className="min-h-[100dvh] bg-[#0a0e1a] flex items-center justify-center">
-      <SignUp />
+    <div className="min-h-screen flex items-center justify-center bg-[#0a0e1a]">
+      <SignUp appearance={{
+        elements: {
+          formButtonPrimary: 
+            "bg-emerald-500 hover:bg-emerald-400 text-sm normal-case",
+        }
+      }} />
     </div>
-  )
+  );
 }
