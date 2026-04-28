@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+import { SignInButton, UserButton, useAuth } from '@clerk/nextjs'
 import { useQuizStore } from '@/store/quizStore'
 import { getCategories, getCategoryByName } from '@/lib/categories'
 import type { Difficulty, GameMode } from '@/types/quiz'
@@ -27,9 +27,13 @@ export default function HomePage() {
   const [step, setStep] = useState<Step>('home')
   const [selectedCat, setSelectedCat] = useState<string | null>(null)
   const [selectedDiff, setSelectedDiff] = useState<Difficulty | null>(null)
+  const [mounted, setMounted] = useState(false)
 
-  const { startQuiz, mistakes, questions } = useQuizStore()
+  const { startQuiz, mistakes, questions, xp } = useQuizStore()
+  const { isSignedIn } = useAuth()
   const categories = getCategories()
+
+  useEffect(() => { setMounted(true) }, [])
 
   function pickCategory(name: string) {
     setSelectedCat(name)
@@ -77,7 +81,7 @@ export default function HomePage() {
           <div className="flex items-center gap-3">
             {step !== 'home' && (
               <button onClick={goBack} className="text-zinc-400 hover:text-white transition-colors mr-1">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
               </button>
             )}
             <h1 className="text-2xl font-black tracking-tight">
@@ -90,20 +94,20 @@ export default function HomePage() {
             <div className="flex items-center gap-2 bg-zinc-800/60 px-3 py-1.5 rounded-full border border-zinc-700/50">
               <span className="text-amber-400 text-sm">⚡</span>
               <span className="text-sm font-bold text-zinc-200">
-                {useQuizStore.getState().xp} XP
+                {mounted ? xp : 0} XP
               </span>
             </div>
-            
-            <SignedIn>
+
+            {isSignedIn ? (
               <UserButton />
-            </SignedIn>
-            <SignedOut>
+            ) : (
               <SignInButton mode="modal">
                 <button className="text-sm font-bold bg-emerald-500/10 text-emerald-400 px-4 py-1.5 rounded-full border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors">
                   Zaloguj
                 </button>
               </SignInButton>
-            </SignedOut>
+            )}
+          </div>
         </div>
       </header>
 
@@ -181,7 +185,7 @@ export default function HomePage() {
                         </div>
                         <div className="text-xs text-zinc-500 mt-0.5">{count} pytań dostępnych</div>
                       </div>
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-zinc-500"><path d="M9 18l6-6-6-6"/></svg>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-zinc-500"><path d="M9 18l6-6-6-6" /></svg>
                     </motion.button>
                   )
                 })}

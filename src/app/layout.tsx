@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs"
+import { ClerkProvider } from "@clerk/nextjs"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 
@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   title: "Mindforge - Ucz się grając",
   description: "Grywalizacyjna aplikacja quizowa inspirowana Duolingo. Ucz się programowania, IT, języka polskiego i więcej.",
   manifest: "/manifest.json",
-  themeColor: "#0a0e1a",
 }
 
 export default function RootLayout({

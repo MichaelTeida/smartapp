@@ -1,7 +1,7 @@
 import mongoose, { Schema, type Document } from 'mongoose'
 
 export interface IUser extends Document {
-  email: string
+  clerkId: string
   xp: number
   categoryProgress: Map<string, { basic: number; advanced: number }>
   mistakes: string[]
@@ -11,7 +11,7 @@ export interface IUser extends Document {
 
 const UserSchema = new Schema<IUser>(
   {
-    email: { type: String, required: true, unique: true, lowercase: true, trim: true },
+    clerkId: { type: String, required: true, unique: true },
     xp: { type: Number, default: 0 },
     categoryProgress: {
       type: Map,
