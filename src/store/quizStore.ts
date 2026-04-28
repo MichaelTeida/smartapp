@@ -31,12 +31,16 @@ interface QuizState {
   xp: number
   mistakes: string[]
   finished: boolean
+  syncing: boolean
 
   startQuiz: (category: string, difficulty: Difficulty, mode: GameMode, questions: QuizQuestion[]) => void
   selectAnswer: (index: number) => void
   nextQuestion: () => void
   getResult: () => QuizResult
   reset: () => void
+  replay: () => void
+  syncFromServer: () => Promise<void>
+  syncToServer: () => Promise<void>
 }
 
 export const useQuizStore = create<QuizState>()(
@@ -53,6 +57,7 @@ export const useQuizStore = create<QuizState>()(
       xp: 0,
       mistakes: [],
       finished: false,
+      syncing: false,
 
       startQuiz: (category, difficulty, mode, questions) => {
         let pool = shuffle(questions)
@@ -101,6 +106,7 @@ export const useQuizStore = create<QuizState>()(
 
         if (next >= questions.length) {
           set({ finished: true })
+          get().syncToServer()
           return
         }
 
@@ -119,6 +125,21 @@ export const useQuizStore = create<QuizState>()(
         }
       },
 
+      replay: () => {
+        const { category, difficulty, mode, questions } = get()
+        if (!category || !difficulty || !mode) return
+        let pool = shuffle(questions)
+        if (mode === 'egzamin') pool = pool.slice(0, 20)
+        set({
+          questions: pool,
+          currentIndex: 0,
+          selectedAnswer: null,
+          answered: false,
+          answers: [],
+          finished: false,
+        })
+      },
+
       reset: () => set({
         category: null,
         difficulty: null,
@@ -130,6 +151,31 @@ export const useQuizStore = create<QuizState>()(
         answers: [],
         finished: false,
       }),
+
+      syncFromServer: async () => {
+        try {
+          set({ syncing: true })
+          const res = await fetch('/api/user')
+          if (res.ok) {
+            const user = await res.json()
+            set({ xp: user.xp ?? 0, mistakes: user.mistakes ?? [] })
+          } else if (res.status === 404) {
+            await fetch('/api/user', { method: 'POST' })
+          }
+        } catch { /* offline fallback to localStorage */ }
+        finally { set({ syncing: false }) }
+      },
+
+      syncToServer: async () => {
+        try {
+          const { xp, mistakes } = get()
+          await fetch('/api/user', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ xp, mistakes }),
+          })
+        } catch { /* silent fail, localStorage has the data */ }
+      },
     }),
     {
       name: 'mindforge-quiz',

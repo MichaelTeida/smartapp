@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useCallback } from 'react'
+import { useEffect, useCallback, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useQuizStore } from '@/store/quizStore'
 import QuizResult from './QuizResult'
+import Confetti from './Confetti'
 
 const keys = ['1', '2', '3', '4']
 const labels = ['A', 'B', 'C', 'D']
@@ -11,13 +12,15 @@ const labels = ['A', 'B', 'C', 'D']
 export default function QuizEngine() {
   const {
     questions, currentIndex, selectedAnswer, answered, mode, finished,
-    selectAnswer, nextQuestion, getResult, reset,
+    selectAnswer, nextQuestion, getResult, reset, replay,
   } = useQuizStore()
 
+  const [showConfetti, setShowConfetti] = useState(false)
   const question = questions[currentIndex]
 
   const handleNext = useCallback(() => {
     if (!answered) return
+    setShowConfetti(false)
     nextQuestion()
   }, [answered, nextQuestion])
 
@@ -39,8 +42,14 @@ export default function QuizEngine() {
     return () => window.removeEventListener('keydown', onKey)
   }, [answered, selectAnswer, handleNext])
 
+  useEffect(() => {
+    if (answered && selectedAnswer !== null && question?.options[selectedAnswer]?.isCorrect) {
+      setShowConfetti(true)
+    }
+  }, [answered, selectedAnswer, question])
+
   if (finished) {
-    return <QuizResult result={getResult()} onReset={reset} />
+    return <QuizResult result={getResult()} onReset={reset} onReplay={replay} />
   }
 
   if (!question) return null
@@ -50,10 +59,11 @@ export default function QuizEngine() {
 
   return (
     <div className="flex flex-col min-h-[100dvh] bg-[#0a0e1a]">
-      {/* Progress bar */}
+      <Confetti active={showConfetti} />
+
       <div className="px-4 pt-4 pb-2">
         <div className="flex items-center gap-3">
-          <button onClick={reset} className="text-zinc-400 hover:text-white transition-colors" aria-label="Zamknij quiz">
+          <button onClick={reset} className="text-zinc-400 hover:text-white transition-colors shrink-0" aria-label="Zamknij quiz">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
           </button>
           <div className="flex-1 h-3 bg-zinc-800 rounded-full overflow-hidden">
@@ -64,27 +74,26 @@ export default function QuizEngine() {
               transition={{ type: 'spring', stiffness: 100 }}
             />
           </div>
-          <span className="text-zinc-400 text-sm font-mono min-w-[3.5rem] text-right">
+          <span className="text-zinc-400 text-sm font-mono min-w-[3.5rem] text-right shrink-0">
             {currentIndex + 1}/{questions.length}
           </span>
         </div>
       </div>
 
-      {/* Question */}
       <div className="flex-1 flex flex-col justify-center px-4 sm:px-8 max-w-2xl mx-auto w-full">
         <AnimatePresence mode="wait">
           <motion.div
-            key={question.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            key={`q-${currentIndex}-${question.id}`}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -40 }}
+            transition={{ duration: 0.25 }}
           >
-            <h2 className="text-xl sm:text-2xl font-bold text-white mb-8 leading-relaxed">
+            <h2 className="text-lg sm:text-2xl font-bold text-white mb-6 sm:mb-8 leading-relaxed">
               {question.question}
             </h2>
 
-            <div className="grid gap-3">
+            <div className="grid gap-2 sm:gap-3">
               {question.options.map((opt, i) => {
                 let style = 'border-zinc-700/50 bg-zinc-800/40 hover:bg-zinc-700/50 hover:border-zinc-600 text-zinc-100'
 
@@ -105,9 +114,9 @@ export default function QuizEngine() {
                     disabled={answered}
                     whileHover={!answered ? { scale: 1.01 } : {}}
                     whileTap={!answered ? { scale: 0.99 } : {}}
-                    className={`flex items-center gap-4 p-4 rounded-xl border-2 text-left transition-all duration-200 cursor-pointer disabled:cursor-default ${style}`}
+                    className={`flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border-2 text-left transition-all duration-200 cursor-pointer disabled:cursor-default min-h-[3rem] ${style}`}
                   >
-                    <span className={`shrink-0 w-9 h-9 rounded-lg flex items-center justify-center text-sm font-bold ${
+                    <span className={`shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-xs sm:text-sm font-bold ${
                       answered && i === correctIdx
                         ? 'bg-emerald-500 text-white'
                         : answered && i === selectedAnswer && !isCorrect
@@ -117,7 +126,7 @@ export default function QuizEngine() {
                       <span className="opacity-50 text-[10px] mr-0.5">{keys[i]}</span>
                       {labels[i]}
                     </span>
-                    <span className="text-[15px] sm:text-base leading-snug">{opt.text}</span>
+                    <span className="text-sm sm:text-base leading-snug">{opt.text}</span>
                   </motion.button>
                 )
               })}
@@ -126,7 +135,6 @@ export default function QuizEngine() {
         </AnimatePresence>
       </div>
 
-      {/* Feedback panel */}
       <AnimatePresence>
         {answered && (
           <motion.div
@@ -140,8 +148,8 @@ export default function QuizEngine() {
                 : 'bg-red-950/80 border-red-500/40'
             }`}
           >
-            <div className="max-w-2xl mx-auto px-4 sm:px-8 py-5">
-              <div className="flex items-start gap-3 mb-3">
+            <div className="max-w-2xl mx-auto px-4 sm:px-8 py-4 sm:py-5">
+              <div className="flex items-start gap-3 mb-2 sm:mb-3">
                 {isCorrect ? (
                   <motion.div
                     initial={{ scale: 0, rotate: -180 }}
@@ -174,12 +182,12 @@ export default function QuizEngine() {
                 {question.correctExplanation}
               </p>
 
-              <div className="mt-4 flex justify-end">
+              <div className="mt-3 sm:mt-4 flex justify-end">
                 <motion.button
                   onClick={handleNext}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className={`px-8 py-3 rounded-xl font-bold text-sm tracking-wide transition-all ${
+                  className={`px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-bold text-sm tracking-wide transition-all ${
                     isCorrect
                       ? 'bg-emerald-500 hover:bg-emerald-400 text-white shadow-lg shadow-emerald-500/25'
                       : 'bg-red-500 hover:bg-red-400 text-white shadow-lg shadow-red-500/25'

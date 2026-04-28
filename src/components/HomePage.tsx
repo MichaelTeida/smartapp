@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { SignInButton, UserButton, useAuth } from '@clerk/nextjs'
 import { useQuizStore } from '@/store/quizStore'
 import { getCategories, getCategoryByName } from '@/lib/categories'
+import { useSyncUser } from '@/hooks/useSyncUser'
 import type { Difficulty, GameMode } from '@/types/quiz'
 import QuizEngine from '@/components/QuizEngine'
 
@@ -31,6 +32,7 @@ export default function HomePage() {
 
   const { startQuiz, mistakes, questions, xp } = useQuizStore()
   const { isSignedIn } = useAuth()
+  useSyncUser()
   const categories = getCategories()
 
   useEffect(() => { setMounted(true) }, [])

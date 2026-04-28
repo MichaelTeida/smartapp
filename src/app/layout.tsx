@@ -27,7 +27,14 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="pl" className={`${geistSans.variable} ${geistMono.variable}`}>
-        <body>{children}</body>
+        <body>
+          {children}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}`,
+            }}
+          />
+        </body>
       </html>
     </ClerkProvider>
   )

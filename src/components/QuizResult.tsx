@@ -7,9 +7,10 @@ import { useQuizStore } from '@/store/quizStore'
 interface Props {
   result: QR
   onReset: () => void
+  onReplay: () => void
 }
 
-export default function QuizResult({ result, onReset }: Props) {
+export default function QuizResult({ result, onReset, onReplay }: Props) {
   const xp = useQuizStore(s => s.xp)
   const pct = result.score
 
@@ -46,7 +47,6 @@ export default function QuizResult({ result, onReset }: Props) {
             <Stat label="Błędy" value={`${result.wrongAnswers}`} color="text-red-400" />
           </div>
 
-          {/* Score ring */}
           <div className="flex justify-center">
             <div className="relative w-32 h-32">
               <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
@@ -80,7 +80,7 @@ export default function QuizResult({ result, onReset }: Props) {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            onClick={() => window.location.reload()}
+            onClick={onReplay}
             className="flex-1 py-3.5 rounded-xl font-bold bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white transition-all shadow-lg shadow-emerald-500/20"
           >
             Zagraj ponownie

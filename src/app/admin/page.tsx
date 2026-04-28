@@ -2,11 +2,16 @@
 
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useAuth, RedirectToSignIn } from '@clerk/nextjs'
 
 export default function AdminPage() {
+  const { isSignedIn, isLoaded } = useAuth()
   const [status, setStatus] = useState<{ type: 'idle' | 'loading' | 'success' | 'error'; message: string }>({ type: 'idle', message: '' })
   const [preview, setPreview] = useState<{ category: string; basic: number; advanced: number } | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
+
+  if (!isLoaded) return null
+  if (!isSignedIn) return <RedirectToSignIn />
 
   function handleFile(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
