@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { ClerkProvider } from "@clerk/nextjs"
 import { Outfit } from "next/font/google"
+import { ThemeProvider } from "@/components/theme-provider"
+import LiquidGlassFilter from "@/components/ui/LiquidGlassFilter"
 import "./globals.css"
 
 const outfit = Outfit({
@@ -21,9 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="pl" className={`${outfit.variable} font-sans`}>
-        <body suppressHydrationWarning className="bg-[#09090b] text-zinc-50 min-h-[100dvh] antialiased">
-          {children}
+      <html lang="pl" className={`${outfit.variable} font-sans`} suppressHydrationWarning>
+        <body className="min-h-[100dvh] antialiased">
+          <ThemeProvider>
+            <LiquidGlassFilter />
+            {children}
+          </ThemeProvider>
           <script
             dangerouslySetInnerHTML={{
               __html: `if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}`,

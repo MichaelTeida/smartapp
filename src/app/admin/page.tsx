@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { useAuth, RedirectToSignIn } from '@clerk/nextjs'
+import { ArrowLeft } from 'lucide-react'
 
 export default function AdminPage() {
   const { isSignedIn, isLoaded } = useAuth()
@@ -16,7 +17,6 @@ export default function AdminPage() {
   function handleFile(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
     if (!file) return
-
     const reader = new FileReader()
     reader.onload = (ev) => {
       try {
@@ -26,11 +26,7 @@ export default function AdminPage() {
           setPreview(null)
           return
         }
-        setPreview({
-          category: data.category,
-          basic: data.levels.Podstawowy.length,
-          advanced: data.levels.Zaawansowany.length,
-        })
+        setPreview({ category: data.category, basic: data.levels.Podstawowy.length, advanced: data.levels.Zaawansowany.length })
         setStatus({ type: 'idle', message: '' })
       } catch {
         setStatus({ type: 'error', message: 'Invalid JSON file' })
@@ -43,24 +39,12 @@ export default function AdminPage() {
   async function upload() {
     const file = fileRef.current?.files?.[0]
     if (!file) return
-
     setStatus({ type: 'loading', message: 'Uploading...' })
-
     try {
       const text = await file.text()
       const data = JSON.parse(text)
-
-      const res = await fetch('/api/categories', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
-
-      if (!res.ok) {
-        const err = await res.json()
-        throw new Error(err.error || 'Upload failed')
-      }
-
+      const res = await fetch('/api/categories', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+      if (!res.ok) { const err = await res.json(); throw new Error(err.error || 'Upload failed') }
       const result = await res.json()
       setStatus({ type: 'success', message: `"${result.category}" uploaded (${result.questions} questions)` })
       setPreview(null)
@@ -71,51 +55,56 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="min-h-[100dvh] bg-[#0a0e1a] text-white">
-      <header className="px-4 sm:px-8 pt-6 pb-4">
+    <div className="min-h-[100dvh]">
+      <header className="glass m-[var(--gap-main)] mb-0 px-6 py-5" data-variant="panel">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
-          <a href="/" className="text-zinc-400 hover:text-white transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+          <a href="/" className="btn-glass w-9 h-9 p-0 shrink-0">
+            <ArrowLeft className="w-4 h-4" />
           </a>
           <h1 className="text-xl font-black">
-            <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Admin</span>
-            <span className="text-zinc-500 ml-2 text-sm font-normal">Upload categories</span>
+            <span className="gradient-text">Admin</span>
+            <span className="text-zinc-400 dark:text-zinc-500 ml-2 text-sm font-normal">Upload categories</span>
           </h1>
+        </div>
+        
+        <div className="max-w-2xl mx-auto flex gap-2 mt-4">
+          <a href="/admin" className="btn-glass px-4 py-1.5 h-auto text-sm font-bold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border-indigo-500/20">
+            Upload JSON
+          </a>
+          <a href="/admin/generator" className="btn-glass px-4 py-1.5 h-auto text-sm font-medium">
+            Generator Promptów
+          </a>
         </div>
       </header>
 
-      <main className="px-4 sm:px-8 max-w-2xl mx-auto">
-        <div className="mt-6 p-6 rounded-2xl bg-zinc-800/40 border border-zinc-700/40">
+      <main className="px-4 sm:px-8 max-w-2xl mx-auto mt-6">
+        <div className="glass p-6" data-variant="panel">
           <label className="block mb-4">
-            <span className="text-sm font-bold text-zinc-300 mb-2 block">JSON Category File</span>
+            <span className="text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-2 block">JSON Category File</span>
             <input
               ref={fileRef}
               type="file"
               accept=".json"
               onChange={handleFile}
-              className="block w-full text-sm text-zinc-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-bold file:bg-zinc-700 file:text-zinc-200 hover:file:bg-zinc-600 file:cursor-pointer cursor-pointer"
+              className="block w-full text-sm text-zinc-500 dark:text-zinc-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-bold file:bg-zinc-200 dark:file:bg-zinc-700 file:text-zinc-700 dark:file:text-zinc-200 hover:file:bg-zinc-300 dark:hover:file:bg-zinc-600 file:cursor-pointer cursor-pointer"
             />
           </label>
 
           {preview && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mb-4 p-4 rounded-xl bg-zinc-900/60 border border-zinc-700/30"
-            >
-              <div className="text-sm font-bold text-zinc-200 mb-2">Preview</div>
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-4 glass p-4 rounded-xl">
+              <div className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mb-2">Preview</div>
               <div className="grid grid-cols-3 gap-3 text-sm">
                 <div>
-                  <span className="text-zinc-500">Category:</span>
-                  <div className="font-bold text-emerald-400">{preview.category}</div>
+                  <span className="text-zinc-400 dark:text-zinc-500">Category:</span>
+                  <div className="font-bold text-emerald-600 dark:text-emerald-400">{preview.category}</div>
                 </div>
                 <div>
-                  <span className="text-zinc-500">Basic:</span>
-                  <div className="font-bold">{preview.basic} questions</div>
+                  <span className="text-zinc-400 dark:text-zinc-500">Basic:</span>
+                  <div className="font-bold text-zinc-800 dark:text-white">{preview.basic} questions</div>
                 </div>
                 <div>
-                  <span className="text-zinc-500">Advanced:</span>
-                  <div className="font-bold">{preview.advanced} questions</div>
+                  <span className="text-zinc-400 dark:text-zinc-500">Advanced:</span>
+                  <div className="font-bold text-zinc-800 dark:text-white">{preview.advanced} questions</div>
                 </div>
               </div>
             </motion.div>
@@ -126,7 +115,8 @@ export default function AdminPage() {
             whileTap={{ scale: 0.98 }}
             onClick={upload}
             disabled={!preview || status.type === 'loading'}
-            className="w-full py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white disabled:opacity-40 disabled:cursor-not-allowed transition-all shadow-lg shadow-emerald-500/20"
+            className="w-full py-3 btn-glass font-bold text-sm h-auto disabled:opacity-40 disabled:cursor-not-allowed"
+            data-variant="cta"
           >
             {status.type === 'loading' ? 'Uploading...' : 'Upload to Database'}
           </motion.button>
@@ -135,8 +125,8 @@ export default function AdminPage() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className={`mt-3 p-3 rounded-lg text-sm ${
-                status.type === 'success' ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'
+              className={`mt-3 p-3 rounded-lg text-sm glass ${
+                status.type === 'success' ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'
               }`}
             >
               {status.message}
@@ -144,9 +134,9 @@ export default function AdminPage() {
           )}
         </div>
 
-        <div className="mt-6 p-4 rounded-xl bg-zinc-800/20 border border-zinc-700/20">
-          <div className="text-xs text-zinc-500 font-mono leading-relaxed">
-            <span className="text-zinc-400 font-bold">Expected format:</span><br />
+        <div className="mt-6 glass p-4" data-variant="panel">
+          <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono leading-relaxed">
+            <span className="text-zinc-700 dark:text-zinc-300 font-bold">Expected format:</span><br />
             {`{ "category": "Name", "levels": { "Podstawowy": [...], "Zaawansowany": [...] } }`}
           </div>
         </div>

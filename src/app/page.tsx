@@ -1,15 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { SignInButton, useAuth } from '@clerk/nextjs'
-import { MonitorPlay, Trophy, Zap, BrainCircuit, ArrowRight } from 'lucide-react'
+import { BrainCircuit, ArrowRight, MonitorPlay, Trophy, Zap } from 'lucide-react'
 import Link from 'next/link'
-
-const fade = (delay = 0) => ({
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.25, 0.46, 0.45, 0.94] },
-})
 
 export default function LandingPage() {
   const { isSignedIn, isLoaded } = useAuth()
@@ -18,57 +11,58 @@ export default function LandingPage() {
     <div className="min-h-[100dvh] flex flex-col items-center justify-center px-6 py-16 relative">
       <main className="max-w-3xl mx-auto flex flex-col items-center text-center">
 
-        <motion.div {...fade(0)} className="mb-10 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 bg-zinc-900/80">
-          <BrainCircuit className="w-4 h-4 text-violet-400" />
-          <span className="text-sm font-medium text-zinc-400">Przestań czytać. Zacznij się sprawdzać.</span>
-        </motion.div>
+        <div className="animate-fade-in mb-10 inline-flex items-center gap-2 px-4 py-2 rounded-full glass" data-variant="interactive">
+          <BrainCircuit className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
+          <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">Przestań czytać. Zacznij się sprawdzać.</span>
+        </div>
 
-        <motion.h1 {...fade(0.1)} className="text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-[1.1]">
+        <h1 className="animate-fade-in delay-1 text-5xl sm:text-7xl font-black tracking-tight mb-6 leading-[1.1] text-zinc-900 dark:text-white">
           Elitarna kuźnia
           <br />
-          <span className="text-violet-400">wiedzy IT.</span>
-        </motion.h1>
+          <span className="gradient-text">wiedzy IT.</span>
+        </h1>
 
-        <motion.p {...fade(0.2)} className="text-lg text-zinc-500 max-w-xl mb-12 leading-relaxed">
+        <p className="animate-fade-in delay-2 text-lg text-zinc-500 dark:text-zinc-400 max-w-xl mb-12 leading-relaxed">
           Zdobywaj XP, awansuj w rankingach i opanuj programowanie poprzez interaktywne quizy i bezlitosny tryb poprawy błędów.
-        </motion.p>
+        </p>
 
-        <motion.div {...fade(0.35)}>
+        <div className="animate-fade-in delay-3">
           {!isLoaded ? (
-            <div className="px-8 py-4 bg-zinc-900 rounded-full animate-pulse text-transparent">Loading</div>
+            <div className="px-8 py-4 glass rounded-full animate-pulse text-transparent">Loading</div>
           ) : isSignedIn ? (
             <Link
               href="/app"
-              className="inline-flex items-center gap-2.5 px-8 py-4 bg-violet-500 hover:bg-violet-400 text-white rounded-full font-bold text-lg transition-colors"
+              className="btn-glass px-8 py-4 text-lg font-bold h-auto"
+              data-variant="cta"
             >
               Kontynuuj naukę <ArrowRight className="w-5 h-5" />
             </Link>
           ) : (
             <SignInButton mode="modal" forceRedirectUrl="/app">
-              <button className="inline-flex items-center gap-2.5 px-8 py-4 bg-white hover:bg-zinc-100 text-zinc-900 rounded-full font-bold text-lg transition-colors cursor-pointer">
+              <button className="btn-glass px-8 py-4 text-lg font-bold h-auto cursor-pointer" data-variant="cta">
                 Rozpocznij za darmo <ArrowRight className="w-5 h-5" />
               </button>
             </SignInButton>
           )}
-        </motion.div>
+        </div>
 
-        <motion.div {...fade(0.5)} className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-24 w-full">
+        <div className="animate-fade-in delay-5 grid grid-cols-1 sm:grid-cols-3 gap-4 mt-24 w-full">
           <FeatureCard
-            icon={<MonitorPlay className="w-5 h-5 text-emerald-400" />}
+            icon={<MonitorPlay className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />}
             title="Praktyka"
             desc="Setki pytań rekrutacyjnych i architektonicznych."
           />
           <FeatureCard
-            icon={<Trophy className="w-5 h-5 text-amber-400" />}
+            icon={<Trophy className="w-5 h-5 text-amber-500 dark:text-amber-400" />}
             title="Gamifikacja"
             desc="System XP, poziomy i rangi. Progresja, która motywuje."
           />
           <FeatureCard
-            icon={<Zap className="w-5 h-5 text-violet-400" />}
+            icon={<Zap className="w-5 h-5 text-indigo-500 dark:text-indigo-400" />}
             title="Powtórki"
             desc="Tryb poprawy błędów upewni się, że nie zapomnisz."
           />
-        </motion.div>
+        </div>
       </main>
     </div>
   )
@@ -76,12 +70,12 @@ export default function LandingPage() {
 
 function FeatureCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
   return (
-    <div className="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 text-left">
-      <div className="w-10 h-10 rounded-xl bg-zinc-800 flex items-center justify-center mb-4">
+    <div className="glass p-6 text-left" data-variant="card">
+      <div className="w-10 h-10 rounded-xl glass flex items-center justify-center mb-4">
         {icon}
       </div>
-      <h3 className="font-bold text-zinc-100 mb-1.5">{title}</h3>
-      <p className="text-sm text-zinc-500 leading-relaxed">{desc}</p>
+      <h3 className="font-bold text-zinc-800 dark:text-zinc-100 mb-1.5">{title}</h3>
+      <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">{desc}</p>
     </div>
   )
 }
